@@ -1,6 +1,31 @@
-# Chapter 1
+# Chapter 1 with interactive media tests
 
 Small changes and more small changes. And more small changes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[@tegelerFindingCommonGround2011]
+
+#### knitr for Vimeo {-}
+```{r, echo=FALSE}
+knitr::include_url("https://player.vimeo.com/video/27299734")
+```
+
+#### knitr for CTDA video {-}
+```{r, echo=FALSE}
+knitr::include_url("https://collections.ctdigitalarchive.org/islandora/object/120002%3A221/datastream/MP4/view")
+```
+
+#### knitr for YouTube with caption {-}
+```{r embed2, out.extra='style="border: none;"', out.width='99%', fig.cap="Embedded YouTube video", echo = FALSE}
+knitr::include_url('https://youtube.com/embed/Gl3uIRYYUmI')
+```
+
+#### knitr for Leaflet map with caption {-}
+```{r fig.cap='URL inserted using R code: centered, resized at 90 percent, not sure how to format footnotes or italics', out.width='90%', out.height='110%', fig.align='center', echo=FALSE}
+knitr::include_url("https://ontheline.github.io/otl-town-borders/")
+```
+
+See more about the knitr delay option https://bookdown.org/yihui/bookdown/web-pages-and-shiny-apps.html
+
+Markdown formatted video links do not work
+https://bookdown.org/yihui/rmarkdown/learnr-videos.html
 
 Federal Housing authorities eventually did require West Hartford to admit African Americans; however, town residents and leaders prevailed by specifying residency criteria in such a way as to maintain the racial homogeneity of their community. Racist actions such as these, even when they occurred decades ago, have been factors in shaping the present-day demographics of West Hartford and other towns in the state.
 
