@@ -13,12 +13,12 @@ knitr::include_url("https://collections.ctdigitalarchive.org/islandora/object/12
 ```
 
 #### knitr for YouTube with caption {-}
-```{r embed2, out.extra='style="border: none;"', out.width='99%', fig.cap="Embedded YouTube video", echo = FALSE}
+```{r out.extra='style="border: none;"', out.width='99%', fig.cap="Embedded YouTube video", echo = FALSE}
 knitr::include_url('https://youtube.com/embed/Gl3uIRYYUmI')
 ```
 
 #### knitr for Leaflet map with caption {-}
-```{r fig.cap='URL inserted using R code: centered, resized at 90 percent, not sure how to format footnotes or italics', out.width='90%', out.height='110%', fig.align='center', echo=FALSE}
+```{r fig.cap='URL inserted using R code: centered, resized at 90 percent, not sure how to format italics, and I have not succeeded in adding footnotes to captions this way, which I need for sourcework', out.width='90%', out.height='110%', fig.align='center', echo=FALSE}
 knitr::include_url("https://ontheline.github.io/otl-town-borders/")
 ```
 
@@ -37,7 +37,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[@penningtonPoliticalHistorySchool2007]
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[@doughertyReviewConnecticutPublic2011]
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[@doughertyConflictingQuestionsWhy2009]
 
