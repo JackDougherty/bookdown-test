@@ -10,13 +10,16 @@ Small changes and more small changes. And more small changes. Lorem ipsum dolor 
 (ref:otl-town-borders) Scroll down the narrative (or click and use arrow keys) in this [interactive map](https://ontheline.github.io/otl-town-borders/) to see how Hartford County, Connecticut was divided into 29 separate towns from the early 1600s to the late 1800s. Boundaries shown here are not exact, but approximated from the best available digital sources: UConn Libraries MAGIC historical maps, Atlas of Historical County Boundaries at Newberry Library, and the Connecticut State Register and Manual. View [map historical sources, known issues, and the code](https://github.com/ontheline/otl-town-borders/), developed by Ilya Ilyankou and Jack Dougherty.^[@ilyankouMapTownBorders2017]
 
 
-```{r otl-town-borders, echo=FALSE, fig.cap="(ref:otl-town-borders)", fig_height=9, auto.pdf=TRUE, screenshot.alt="images/1600s-otl-town-borders.jpg"}
+```{r otl-town-borders, echo=FALSE, fig.cap="(ref:otl-town-borders)", fig_height=9, screenshot.alt="images/1600s-otl-town-borders.jpg"}
 if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-town-borders/") else knitr::include_graphics("images/1600s-otl-town-borders.jpg")
 ```
 
-Test non-scrolling map (quick sample with same caption to test HTML height)
-```{r otl-home-value, echo=FALSE, fig_height=10, fig.cap="(ref:otl-town-borders)", auto.pdf=TRUE, screenshot.alt="images/1600s-otl-town-borders.jpg"}
-if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-home-value/") else knitr::include_graphics("images/1600s-otl-town-borders.jpg")
+Here's a second type of interactive map, adding in auto.pdf=TRUE:
+
+(ref:otl-home-value) Here's a sample caption
+
+```{r otl-home-value, echo=FALSE, fig_height=10, fig.cap="(ref:otl-home-value)", auto.pdf=TRUE, screenshot.alt="images/1910-2010-home-value.jpg"}
+if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-home-value/") else knitr::include_graphics("images/1910-2010-home-value.jpg")
 ```
 
 UNANSWERED QUESTIONS:
