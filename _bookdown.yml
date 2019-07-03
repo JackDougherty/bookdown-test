@@ -1,4 +1,4 @@
-output_dir: "book"
+output_dir: "docs"
 book_filename: "bookdown-test"
 edit: https://github.com/jackdougherty/bookdown-test/edit/master/%s
 ui:
