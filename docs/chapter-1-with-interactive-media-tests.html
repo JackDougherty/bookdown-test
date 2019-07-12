@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Chapter 1 with interactive media tests | Bookdown test</title>
   <meta name="description" content="1 Chapter 1 with interactive media tests | Bookdown test" />
-  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Chapter 1 with interactive media tests | Bookdown test" />
   <meta property="og:type" content="book" />
@@ -25,7 +25,7 @@
 <meta name="author" content="and contributors" />
 
 
-<meta name="date" content="2019-07-03" />
+<meta name="date" content="2019-07-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -48,6 +48,24 @@
 
 
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1 Chapter 1 with interactive media tests | Bookdown custom scripts</title>
+</head>
+
+<body>
+  <script>
+    $(document).ready(function() {
+      $("#fig\\:otl-town-borders~iframe").attr("height", "600px");
+      $("#fig\\:otl-home-value~iframe").attr("height", "600px”);
+      // similarly you can change heights for other iframes
+    })
+  </script>
+</body>
+
+</html>
 
 
 
@@ -96,7 +114,7 @@
             <section class="normal" id="section-">
 <div id="chapter-1-with-interactive-media-tests" class="section level1">
 <h1><span class="header-section-number">1</span> Chapter 1 with interactive media tests</h1>
-<p>Small changes and more small changes. And more small changes. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="citation"><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></span></p>
+<p>Testing…</p>
 <div id="display-interactive-content-in-html-with-screenshot-in-pdf" class="section level4 unnumbered">
 <h4>Display interactive content in HTML with screenshot in PDF</h4>
 <ul>
@@ -105,15 +123,17 @@
 <li>Optional: In the body text, insert a dynamic reference to the figure (which due to floating images in PDF engines, may appear on a different page), like this: … as shown in Figure <a href="chapter-1-with-interactive-media-tests.html#fig:otl-town-borders">1.1</a>.</li>
 </ul>
 
+<!-- includes custom-script.html for iframe height -->
 <div class="figure"><span id="fig:otl-town-borders"></span>
 <iframe src="https://ontheline.github.io/otl-town-borders/" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 1.1: Scroll down the narrative (or click and use arrow keys) in this <a href="https://ontheline.github.io/otl-town-borders/">interactive map</a> to see how Hartford County, Connecticut was divided into 29 separate towns from the early 1600s to the late 1800s. Boundaries shown here are not exact, but approximated from the best available digital sources: UConn Libraries MAGIC historical maps, Atlas of Historical County Boundaries at Newberry Library, and the Connecticut State Register and Manual. View <a href="https://github.com/ontheline/otl-town-borders/">map historical sources, known issues, and the code</a>, developed by Ilya Ilyankou and Jack Dougherty.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>
+Figure 1.1: Scroll down the narrative (or click and use arrow keys) in this <a href="https://ontheline.github.io/otl-town-borders/">interactive map</a> to see how Hartford County, Connecticut was divided into 29 separate towns from the early 1600s to the late 1800s. Boundaries shown here are not exact, but approximated from the best available digital sources: UConn Libraries MAGIC historical maps, Atlas of Historical County Boundaries at Newberry Library, and the Connecticut State Register and Manual. View <a href="https://github.com/ontheline/otl-town-borders/">map historical sources, known issues, and the code</a>, developed by Ilya Ilyankou and Jack Dougherty.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
 </p>
 </div>
 
-<div class="figure"><span id="fig:otl-home-value"></span>
+<!-- includes custom-script.html for iframe height -->
+<div class="figure"><span id="fig:1910-otl-home-value"></span>
 <iframe src="https://ontheline.github.io/otl-home-value/" width="672" height="400px">
 </iframe>
 <p class="caption">
@@ -190,8 +210,7 @@ Figure 1.7: Here’s a sample local scrollable PDF caption, with option to add M
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p>Philip Tegeler, ed., <em>Finding Common Ground: Coordinating Housing and Education Policy to Promote Integration</em> (Washington, DC: Poverty &amp; Race Research Action Council, 2011), <a href="http://www.prrac.org/pdf/HousingEducationReport-October2011.pdf">http://www.prrac.org/pdf/HousingEducationReport-October2011.pdf</a>.<a href="chapter-1-with-interactive-media-tests.html#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p><span class="citation">Ilya Ilyankou and Jack Dougherty, “Map: Town Borders in Hartford County, CT from 1600s to Present,” On The Line, 2017, <a href="https://github.com/OnTheLine/otl-town-borders">https://github.com/OnTheLine/otl-town-borders</a></span><a href="chapter-1-with-interactive-media-tests.html#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p><span class="citation">Ilya Ilyankou and Jack Dougherty, “Map: Town Borders in Hartford County, CT from 1600s to Present,” On The Line, 2017, <a href="https://github.com/OnTheLine/otl-town-borders">https://github.com/OnTheLine/otl-town-borders</a></span><a href="chapter-1-with-interactive-media-tests.html#fnref1" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>

@@ -19,6 +19,8 @@ output:
   bookdown::gitbook:
     dev: svglite
     css: css/style.css
+    includes:
+      in_header: custom-scripts.html
     split_by: chapter
     split_bib: true
     number_sections: true
