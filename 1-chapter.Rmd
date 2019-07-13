@@ -5,31 +5,34 @@ Testing...
 #### Display interactive content in HTML with screenshot in PDF {-}
 - First, define a text reference for each caption, because it accepts RMarkdown cites and links. See [Bookdown section 2.2.4](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html)
 - Second, insert the figure with an R code chunk <https://bookdown.org/yihui/bookdown/r-code.html>, using the if-then-else statement from Michael Dorman, to display interactive version in HTML and static version in PDF.
-- Optional: In the body text, insert a dynamic reference to the figure (which due to floating images in PDF engines, may appear on a different page), like this: ... as shown in Figure \@ref(fig:otl-town-borders).
+- Optional: In the body text, insert a dynamic reference to the figure in the same file (which due to floating images in PDF engines, may appear on a different page), like this: ... as shown in Figure \@ref(fig:1600s-otl-town-borders).
 
-(ref:otl-town-borders) Scroll down the narrative (or click and use arrow keys) in this [interactive map](https://ontheline.github.io/otl-town-borders/) to see how Hartford County, Connecticut was divided into 29 separate towns from the early 1600s to the late 1800s. Boundaries shown here are not exact, but approximated from the best available digital sources: UConn Libraries MAGIC historical maps, Atlas of Historical County Boundaries at Newberry Library, and the Connecticut State Register and Manual. View [map historical sources, known issues, and the code](https://github.com/ontheline/otl-town-borders/), developed by Ilya Ilyankou and Jack Dougherty.^[@ilyankouMapTownBorders2017]
+(ref:1600s-otl-town-borders) Scroll down the narrative (or click and use arrow keys) in this [interactive map](https://ontheline.github.io/otl-town-borders/) to see how Hartford County, Connecticut was divided into 29 separate towns from the early 1600s to the late 1800s. Boundaries shown here are not exact, but approximated from the best available digital sources: UConn Libraries MAGIC historical maps, Atlas of Historical County Boundaries at Newberry Library, and the Connecticut State Register and Manual. View [map historical sources, known issues, and the code](https://github.com/ontheline/otl-town-borders/), developed by Ilya Ilyankou and Jack Dougherty.^[@ilyankouMapTownBorders2017]
 
 <!-- includes custom-script.html for iframe height -->
-```{r otl-town-borders, echo=FALSE, fig.cap="(ref:otl-town-borders)", fig_height=9}
+```{r 1600s-otl-town-borders, echo=FALSE, fig.cap="(ref:1600s-otl-town-borders)", fig_height=9}
 if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-town-borders/") else knitr::include_graphics("images/1600s-otl-town-borders.jpg")
 ```
 
 (ref:1910-otl-home-value) Here's a sample caption for a second type of interactive map
 
 <!-- includes custom-script.html for iframe height -->
-```{r 1910-otl-home-value, echo=FALSE, fig.cap="(ref:1910-otl-home-value)", fig_height=9}
+```{r 1910-otl-home-value, echo=FALSE, fig.cap="(ref:1910-otl-home-value)", fig_height=5}
 if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-home-value/") else knitr::include_graphics("images/1910-2010-home-value.jpg")
 ```
 
-UNANSWERED QUESTIONS:
+UPDATED Unanswered questions:
 
-1. How can I increase the height of the map in the dynamic HTML edition? The HTML rendered iframe is stuck at height=400px, no matter what I try. None of these settings in the example above affect the HTML output:
+1. What's the best way to control the image size in PDF output?
   + fig.height=9 (default is 7)
   + fig_height=9 (I tried both of these versions)
   + out.height="600px"
   + out.height="150%"
-2. How can I insert a title to appear immediately above the map, in both the dynamic HTML and static PDF editions? I know that I can insert a paste () command in the code block, immediately after the curly bracket } and before the if (knitr) statement, but it is ugly and I have no formatting control.
-3. Is `auto.pdf=TRUE` necessary? How about `out.width="100%"`?
+2. Is `auto.pdf=TRUE` necessary? How about `out.width="100%"`?
+3. What's the best way to insert an imperative title in interactive maps, charts, scrolling PDFs? (Example: Scroll the Map). 
+  + Cannot insert a title in R chunk to appear immediately above the map, which I tried
+  + Consider adding HTML title directly above digital element in GitHub repo, but separate from bookdown
+  + Consider adding bold title at beginning of caption: **Image 3.3 Scroll the Map**. 
 4. To do later: modify style.css p.caption for PDF to make underscored links visible in captions, to allow easy click to HTML version
 
 

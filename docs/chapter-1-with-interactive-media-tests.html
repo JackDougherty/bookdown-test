@@ -25,7 +25,7 @@
 <meta name="author" content="and contributors" />
 
 
-<meta name="date" content="2019-07-12" />
+<meta name="date" content="2019-07-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -48,24 +48,13 @@
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>1 Chapter 1 with interactive media tests | Bookdown custom scripts</title>
-</head>
-
-<body>
-  <script>
-    $(document).ready(function() {
-      $("#fig\\:otl-town-borders~iframe").attr("height", "600px");
-      $("#fig\\:otl-home-value~iframe").attr("height", "600px”);
-      // similarly you can change heights for other iframes
-    })
-  </script>
-</body>
-
-</html>
+<script>
+$(document).ready(function() {
+  $("#fig\\:1600s-otl-town-borders~iframe").attr("height", "600px");
+  $("#fig\\:1910-otl-home-value~iframe").attr("height", "600px");
+  // similarly you can change heights for other iframes
+})
+</script>
 
 
 
@@ -120,11 +109,11 @@
 <ul>
 <li>First, define a text reference for each caption, because it accepts RMarkdown cites and links. See <a href="https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html">Bookdown section 2.2.4</a></li>
 <li>Second, insert the figure with an R code chunk <a href="https://bookdown.org/yihui/bookdown/r-code.html" class="uri">https://bookdown.org/yihui/bookdown/r-code.html</a>, using the if-then-else statement from Michael Dorman, to display interactive version in HTML and static version in PDF.</li>
-<li>Optional: In the body text, insert a dynamic reference to the figure (which due to floating images in PDF engines, may appear on a different page), like this: … as shown in Figure <a href="chapter-1-with-interactive-media-tests.html#fig:otl-town-borders">1.1</a>.</li>
+<li>Optional: In the body text, insert a dynamic reference to the figure in the same file (which due to floating images in PDF engines, may appear on a different page), like this: … as shown in Figure <a href="chapter-1-with-interactive-media-tests.html#fig:1600s-otl-town-borders">1.1</a>.</li>
 </ul>
 
 <!-- includes custom-script.html for iframe height -->
-<div class="figure"><span id="fig:otl-town-borders"></span>
+<div class="figure"><span id="fig:1600s-otl-town-borders"></span>
 <iframe src="https://ontheline.github.io/otl-town-borders/" width="672" height="400px">
 </iframe>
 <p class="caption">
@@ -140,9 +129,9 @@ Figure 1.1: Scroll down the narrative (or click and use arrow keys) in this <a h
 Figure 1.2: Here’s a sample caption for a second type of interactive map
 </p>
 </div>
-<p>UNANSWERED QUESTIONS:</p>
+<p>UPDATED Unanswered questions:</p>
 <ol style="list-style-type: decimal">
-<li>How can I increase the height of the map in the dynamic HTML edition? The HTML rendered iframe is stuck at height=400px, no matter what I try. None of these settings in the example above affect the HTML output:</li>
+<li>What’s the best way to control the image size in PDF output?</li>
 </ol>
 <ul>
 <li>fig.height=9 (default is 7)</li>
@@ -151,8 +140,15 @@ Figure 1.2: Here’s a sample caption for a second type of interactive map
 <li>out.height=“150%”</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
-<li>How can I insert a title to appear immediately above the map, in both the dynamic HTML and static PDF editions? I know that I can insert a paste () command in the code block, immediately after the curly bracket } and before the if (knitr) statement, but it is ugly and I have no formatting control.</li>
 <li>Is <code>auto.pdf=TRUE</code> necessary? How about <code>out.width=&quot;100%&quot;</code>?</li>
+<li>What’s the best way to insert an imperative title in interactive maps, charts, scrolling PDFs? (Example: Scroll the Map).</li>
+</ol>
+<ul>
+<li>Cannot insert a title in R chunk to appear immediately above the map, which I tried</li>
+<li>Consider adding HTML title directly above digital element in GitHub repo, but separate from bookdown</li>
+<li>Consider adding bold title at beginning of caption: <strong>Image 3.3 Scroll the Map</strong>.</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
 <li>To do later: modify style.css p.caption for PDF to make underscored links visible in captions, to allow easy click to HTML version</li>
 </ol>
 <p>TESTING VIDEO IN BOOKDOWN:</p>
