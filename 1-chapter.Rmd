@@ -1,12 +1,12 @@
 # Chapter 1 interactive media tests
 
-Testing... How to embed video from CT Digital Archives into Bookdown without autoplay?
+Question: How to embed video stream from CT Digital Archives into Bookdown, WITHOUT autoplay, regardless of whether the user's browser is set to block autoplay?
 
 Here is an oral history video as displayed on the CTDA site, which does NOT autoplay:
 
 https://collections.ctdigitalarchive.org/islandora/object/120002:172
 
-Here is the CTDA MP4 video stream for that object, which runs AUTOPLAY in Chrome and FFox for Mac (and perhaps other browers). CTDA says there is no setting to turn off autoplay from datastreams
+Here is the CTDA MP4 video stream for that object, which runs AUTOPLAY in Chrome and FFox for Mac (and perhaps other browsers). CTDA says there is no setting to turn off autoplay from datastreams
 
 https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4
 
@@ -14,13 +14,20 @@ The stream above also works with this "view" ending:
 
 https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view
 
-Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY, even if I add
+Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY using the iframe method, even if I add "?autoplay=0" or "?autoplay=false" to the end of the src string, as suggested in Stackoverflow below.
 
 (ref:ctda-sample-video) Here's a sample CTDA video caption, with option to add Markdown link and footnote.
 
 ```{r ctda-sample-video, echo=FALSE, fig.cap="(ref:ctda-sample-video)"}
-if(knitr::is_html_output()) knitr::include_url("https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4") else knitr::include_graphics("images/2014-lumpkin-mae-willie-screenshot.png")
+if(knitr::is_html_output()) knitr::include_url("https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4?autoplay=false") else knitr::include_graphics("images/2014-lumpkin-mae-willie-screenshot.png")
 ```
+
+Here's a solution using the [HTML5 video tag](https://www.w3schools.com/tags/tag_video.asp), which simply says NOT to insert "autoplay". BUT this is not an ideal solution because Bookdown/knitr does not *appear* to support the HMTL 5 video tag in the same way as it supports knitr::include_url. This means I cannot use the interactive/static if-else statement or caption auto-numbering with the HTML5 video tag.
+
+<video width="640" height="360" controls>
+    <source src="https://collections.ctdigitalarchive.org/islandora/object/120002:174/datastream/MP4" type="video/mp4">
+</video>
+
 
 See Stackoverflow discussions about HTML iframe, HTML5 video, and autoplay:
 

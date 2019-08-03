@@ -103,22 +103,26 @@ $(document).ready(function() {
             <section class="normal" id="section-">
 <div id="chapter-1-interactive-media-tests" class="section level1">
 <h1><span class="header-section-number">1</span> Chapter 1 interactive media tests</h1>
-<p>Testing… How to embed video from CT Digital Archives into Bookdown without autoplay?</p>
+<p>Question: How to embed video stream from CT Digital Archives into Bookdown, WITHOUT autoplay, regardless of whether the user’s browser is set to block autoplay?</p>
 <p>Here is an oral history video as displayed on the CTDA site, which does NOT autoplay:</p>
 <p><a href="https://collections.ctdigitalarchive.org/islandora/object/120002:172" class="uri">https://collections.ctdigitalarchive.org/islandora/object/120002:172</a></p>
-<p>Here is the CTDA MP4 video stream for that object, which runs AUTOPLAY in Chrome and FFox for Mac (and perhaps other browers). CTDA says there is no setting to turn off autoplay from datastreams</p>
+<p>Here is the CTDA MP4 video stream for that object, which runs AUTOPLAY in Chrome and FFox for Mac (and perhaps other browsers). CTDA says there is no setting to turn off autoplay from datastreams</p>
 <p><a href="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4" class="uri">https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4</a></p>
 <p>The stream above also works with this “view” ending:</p>
 <p><a href="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view" class="uri">https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view</a></p>
-<p>Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY, even if I add</p>
+<p>Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY using the iframe method, even if I add “?autoplay=0” or “?autoplay=false” to the end of the src string, as suggested in Stackoverflow below.</p>
 
 <div class="figure"><span id="fig:ctda-sample-video"></span>
-<iframe src="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4" width="672" height="400px">
+<iframe src="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4?autoplay=false" width="672" height="400px">
 </iframe>
 <p class="caption">
 Figure 1.1: Here’s a sample CTDA video caption, with option to add Markdown link and footnote.
 </p>
 </div>
+<p>Here’s a solution using the <a href="https://www.w3schools.com/tags/tag_video.asp">HTML5 video tag</a>, which simply says NOT to insert “autoplay”. BUT this is not an ideal solution because Bookdown/knitr does not <em>appear</em> to support the HMTL 5 video tag in the same way as it supports knitr::include_url. This means I cannot use the interactive/static if-else statement or caption auto-numbering with the HTML5 video tag.</p>
+<video width="640" height="360" controls>
+<source src="https://collections.ctdigitalarchive.org/islandora/object/120002:174/datastream/MP4" type="video/mp4">
+</video>
 <p>See Stackoverflow discussions about HTML iframe, HTML5 video, and autoplay:</p>
 <p><a href="https://stackoverflow.com/questions/49256942/how-to-disable-autoplay-video-in-iframe" class="uri">https://stackoverflow.com/questions/49256942/how-to-disable-autoplay-video-in-iframe</a>
 and
