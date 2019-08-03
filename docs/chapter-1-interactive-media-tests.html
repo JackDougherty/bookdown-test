@@ -80,6 +80,8 @@ $(document).ready(function() {
 <li class="chapter" data-level="" data-path="chapter-1-interactive-media-tests.html"><a href="chapter-1-interactive-media-tests.html#background"><i class="fa fa-check"></i>Background</a></li>
 <li class="chapter" data-level="" data-path="chapter-1-interactive-media-tests.html"><a href="chapter-1-interactive-media-tests.html#trying-iframe-solution"><i class="fa fa-check"></i>Trying iframe solution</a></li>
 <li class="chapter" data-level="" data-path="chapter-1-interactive-media-tests.html"><a href="chapter-1-interactive-media-tests.html#trying-html5-video-tag-solution"><i class="fa fa-check"></i>Trying HTML5 video tag solution</a></li>
+<li class="chapter" data-level="1.1" data-path="chapter-1-interactive-media-tests.html"><a href="chapter-1-interactive-media-tests.html#best-workarounds-so-far"><i class="fa fa-check"></i><b>1.1</b> Best workarounds, so far:</a></li>
+<li class="chapter" data-level="" data-path="chapter-1-interactive-media-tests.html"><a href="chapter-1-interactive-media-tests.html#example-of-vimeo-video-clip-in-web-edition-no-autoplay-with-static-image-in-pdf-edition"><i class="fa fa-check"></i>Example of Vimeo video clip in web edition (no autoplay), with static image in PDF edition,</a></li>
 <li class="chapter" data-level="" data-path="chapter-1-interactive-media-tests.html"><a href="chapter-1-interactive-media-tests.html#more-resources"><i class="fa fa-check"></i>More resources</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="chapter-2.html"><a href="chapter-2.html"><i class="fa fa-check"></i><b>2</b> Chapter 2</a><ul>
@@ -125,7 +127,7 @@ $(document).ready(function() {
 </div>
 <div id="trying-iframe-solution" class="section level2 unnumbered">
 <h2>Trying iframe solution</h2>
-<p>Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY using the iframe method, even if I add “?autoplay=0” or “?autoplay=false” to the end of the src string, as suggested in Stackoverflow below.</p>
+<p>Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY using the iframe method, even if I add “?autoplay=0” or “?autoplay=false” to the end of the src string, as suggested in Stackoverflow further below.</p>
 
 <div class="figure"><span id="fig:ctda-sample-video"></span>
 <iframe src="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4?autoplay=false" width="672" height="400px">
@@ -134,6 +136,7 @@ $(document).ready(function() {
 Figure 1.1: Here’s a sample CTDA video caption, with option to add Markdown link and footnote.
 </p>
 </div>
+<p>Question: is there a way to add a “no autoplay” command to the iframe through jQuery in the custom-script.html?</p>
 </div>
 <div id="trying-html5-video-tag-solution" class="section level2 unnumbered">
 <h2>Trying HTML5 video tag solution</h2>
@@ -141,15 +144,33 @@ Figure 1.1: Here’s a sample CTDA video caption, with option to add Markdown li
 <video width="640" height="360" controls>
 <source src="https://collections.ctdigitalarchive.org/islandora/object/120002:191/datastream/MP4" type="video/mp4">
 </video>
-<p>BUT the HMTL5 video tag solution this is not ideal because:</p>
+<p>The HMTL5 video tag solution stops autoplay, but it is NOT ideal for Bookdown-generated books because:</p>
 <ul>
-<li>Bookdown/knitr does not <em>appear</em> to support the HMTL 5 video tag in the same way as it supports knitr::include_url.</li>
+<li>Bookdown/knitr does not <em>appear</em> to support the HMTL 5 video tag in the same way as it supports knitr::include_url. I could submit a request to Bookdown to support HTML5 video tag, but it’s not likely to happen soon….</li>
 <li>This means that I cannot use Bookdown built-in support for figures using the HMTL5 video tag, such as:
 <ul>
 <li>the if-else statement in the R code-chunk that places the interactive iframe in HTML and the static floating image in the PDF, but the same caption for both</li>
 <li>figure auto-numbering, such as Figure 1.2, 1.3, etc.</li>
 </ul></li>
 </ul>
+</div>
+<div id="best-workarounds-so-far" class="section level2">
+<h2><span class="header-section-number">1.1</span> Best workarounds, so far:</h2>
+<ol style="list-style-type: decimal">
+<li>Use HTML5 video tag, manually insert a caption, ignore missing figure number, and ignore that this doesn’t work in the PDF version.</li>
+<li>Upload full video to CTDA for historical preservation, and insert only a short video clip of relevant portion to Vimeo or YouTube, then insert the latter in Bookdown with iframe. Since Vimeo/YouTube clips do NOT autoplay, this will work with R code-chunk method above.</li>
+</ol>
+</div>
+<div id="example-of-vimeo-video-clip-in-web-edition-no-autoplay-with-static-image-in-pdf-edition" class="section level2 unnumbered">
+<h2>Example of Vimeo video clip in web edition (no autoplay), with static image in PDF edition,</h2>
+
+<div class="figure"><span id="fig:vimeo-sample-vimeo"></span>
+<iframe src="https://player.vimeo.com/video/27299734" width="672" height="400px">
+</iframe>
+<p class="caption">
+Figure 1.2: Here’s a sample Vimeo caption, with option to add Markdown links and footnote.
+</p>
+</div>
 </div>
 <div id="more-resources" class="section level2 unnumbered">
 <h2>More resources</h2>

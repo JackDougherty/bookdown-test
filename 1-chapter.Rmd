@@ -19,13 +19,16 @@ The stream above also works with this "view" ending:
 https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view
 
 ## Trying iframe solution {-}
-Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY using the iframe method, even if I add "?autoplay=0" or "?autoplay=false" to the end of the src string, as suggested in Stackoverflow below.
+Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY using the iframe method, even if I add "?autoplay=0" or "?autoplay=false" to the end of the src string, as suggested in Stackoverflow further below.
 
 (ref:ctda-sample-video) Here's a sample CTDA video caption, with option to add Markdown link and footnote.
 
 ```{r ctda-sample-video, echo=FALSE, fig.cap="(ref:ctda-sample-video)"}
 if(knitr::is_html_output()) knitr::include_url("https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4?autoplay=false") else knitr::include_graphics("images/2014-lumpkin-mae-willie-screenshot.png")
 ```
+
+Question: is there a way to add a "no autoplay" command to the iframe through jQuery in the custom-script.html?
+
 
 ## Trying HTML5 video tag solution {-}
 Here's a solution using the [HTML5 video tag](https://www.w3schools.com/tags/tag_video.asp), which simply says NOT to insert "autoplay".
@@ -34,12 +37,26 @@ Here's a solution using the [HTML5 video tag](https://www.w3schools.com/tags/tag
     <source src="https://collections.ctdigitalarchive.org/islandora/object/120002:191/datastream/MP4" type="video/mp4">
 </video>
 
-BUT the HMTL5 video tag solution this is not ideal because:
+The HMTL5 video tag solution stops autoplay, but it is NOT ideal for Bookdown-generated books because:
 
--  Bookdown/knitr does not *appear* to support the HMTL 5 video tag in the same way as it supports knitr::include_url.
+-  Bookdown/knitr does not *appear* to support the HMTL 5 video tag in the same way as it supports knitr::include_url. I could submit a request to Bookdown to support HTML5 video tag, but it's not likely to happen soon....
 - This means that I cannot use Bookdown built-in support for figures using the HMTL5 video tag, such as:
   - the if-else statement in the R code-chunk that places the interactive iframe in HTML and the static floating image in the PDF, but the same caption for both
   - figure auto-numbering, such as Figure 1.2, 1.3, etc.
+
+
+## Best workarounds, so far:
+1. Use HTML5 video tag, manually insert a caption, ignore missing figure number, and ignore that this doesn't work in the PDF version.
+2. Upload full video to CTDA for historical preservation, and insert only a short video clip of relevant portion to Vimeo or YouTube, then insert the latter in Bookdown with iframe. Since Vimeo/YouTube clips do NOT autoplay, this will work with R code-chunk method above.
+
+
+## Example of Vimeo video clip in web edition (no autoplay), with static image in PDF edition, {-}
+(ref:vimeo-sample-video) Here's a sample Vimeo caption, with option to add Markdown links and footnote.
+
+```{r vimeo-sample-vimeo, echo=FALSE, fig.cap="(ref:vimeo-sample-video)"}
+if(knitr::is_html_output()) knitr::include_url("https://player.vimeo.com/video/27299734") else knitr::include_graphics("images/2011-walsh-debra.jpg")
+```
+
 
 ## More resources {-}
 See Stackoverflow discussions about HTML iframe, HTML5 video, and autoplay:
