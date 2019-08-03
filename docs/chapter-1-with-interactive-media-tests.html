@@ -25,7 +25,7 @@
 <meta name="author" content="and contributors" />
 
 
-<meta name="date" content="2019-07-13" />
+<meta name="date" content="2019-07-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -103,111 +103,47 @@ $(document).ready(function() {
             <section class="normal" id="section-">
 <div id="chapter-1-with-interactive-media-tests" class="section level1">
 <h1><span class="header-section-number">1</span> Chapter 1 with interactive media tests</h1>
-<p>Testing…</p>
-<div id="display-interactive-content-in-html-with-screenshot-in-pdf" class="section level4 unnumbered">
-<h4>Display interactive content in HTML with screenshot in PDF</h4>
-<ul>
-<li>First, define a text reference for each caption, because it accepts RMarkdown cites and links. See <a href="https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html">Bookdown section 2.2.4</a></li>
-<li>Second, insert the figure with an R code chunk <a href="https://bookdown.org/yihui/bookdown/r-code.html" class="uri">https://bookdown.org/yihui/bookdown/r-code.html</a>, using the if-then-else statement from Michael Dorman, to display interactive version in HTML and static version in PDF.</li>
-<li>Optional: In the body text, insert a dynamic reference to the figure in the same file (which due to floating images in PDF engines, may appear on a different page), like this: … as shown in Figure <a href="chapter-1-with-interactive-media-tests.html#fig:1600s-otl-town-borders">1.1</a>.</li>
-</ul>
+<p>Testing… what are best ways to display images &amp; text in table-like format?</p>
+<!-- TODO - table of photos and text displays well in HTML, but need to find way to display in PDF. Image code-chunks inside markdown table did not work. -->
+<p>Testing r code-chunks, no fig.align, no out.width , text placed below image</p>
+<p><img src="images/dougherty-jack.jpg" /><!-- -->
+Jack Dougherty, the lead author of <em>On The Line</em>, is Professor of Educational Studies and Director of the Center for Hartford Engagement and Research (CHER) at Trinity College. He collaborates with students, colleagues, and community partners to explore cities, suburbs, and schools in metropolitan Hartford, Connecticut, using data visualization, digital history, and web writing tools. Contact him on his <a href="http://internet2.trincoll.edu/facprofiles/Default.aspx?fid=1004266">faculty profile page</a>, or follow him <a href="http://twitter.com/doughertyjack">on Twitter</a> or on his blog <a href="http://jackdougherty.org" class="uri">http://jackdougherty.org</a>.</p>
+<p><img src="images/ilyankou-ilya.jpg" /><!-- -->
+Ilya Ilyankou (Trinity College Class of 2018 with bachelor’s degree in Computer Science and Studio Arts) developed several interactive maps in this book. His open-source code and map links are available at our GitHub public repository: <a href="http://github.com/OnTheLine/" class="uri">http://github.com/OnTheLine/</a>.</p>
+<p>Testing markdown table with markdown images, all at 150x150 and 300dpi and all in jpg format (not png)</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><img src="images/dougherty-jack.jpg" /></td>
+<td>Jack Dougherty, the lead author of <em>On The Line</em>, is Professor of Educational Studies and Director of the Center for Hartford Engagement and Research (CHER) at Trinity College. He collaborates with students, colleagues, and community partners to explore cities, suburbs, and schools in metropolitan Hartford, Connecticut, using data visualization, digital history, and web writing tools. Contact him on his <a href="http://internet2.trincoll.edu/facprofiles/Default.aspx?fid=1004266">faculty profile page</a>, or follow him <a href="http://twitter.com/doughertyjack">on Twitter</a> or on his blog <a href="http://jackdougherty.org" class="uri">http://jackdougherty.org</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>Trinity College</strong></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><img src="images/ilyankou-ilya.jpg" /></td>
+<td>Ilya Ilyankou (Trinity College Class of 2018 with bachelor’s degree in Computer Science and Studio Arts) developed several interactive maps in this book. His open-source code and map links are available at our GitHub public repository: <a href="http://github.com/OnTheLine/" class="uri">http://github.com/OnTheLine/</a>.</td>
+</tr>
+<tr class="even">
+<td><img src="images/levasseur-katie.jpg" /></td>
+<td>Katie Campbell Levasseur (Trinity College Class of 2011 with bachelor’s degree in Educational Studies and Mathematics) conducted restrictive covenant property records research and co-authored <a href="creating.html#how-we-found-restrictive-covenants">How We Found Restrictive Covenants</a>.</td>
+</tr>
+<tr class="odd">
+<td><img src="images/mcgann-shaun.jpg" /></td>
+<td>Shaun McGann (Trinity Colege Class of 2014 with bachelor’s degree in Political Science and Urban Studies) co-authored <a href="separating.html#federal-lending-and-redlining">Federal Lending and Redlining</a>.</td>
+</tr>
+<tr class="even">
+<td><img src="images/simpson-candace.jpg" /></td>
+<td>Candace Simpson (Trinity College Class of 2012 with bachelor’s degree in Educational Studies) co-authored <a href="creating.html#who-owns-oral-history-a-creative-commons-solution">Who Owns Oral History? A Creative Commons Solution</a> and conducted oral history interviews on restrictive property covenants and Sheff v. O’Neill.</td>
+</tr>
+</tbody>
+</table>
 
-<!-- includes custom-script.html for iframe height -->
-<div class="figure"><span id="fig:1600s-otl-town-borders"></span>
-<iframe src="https://ontheline.github.io/otl-town-borders/" width="672" height="400px">
-</iframe>
-<p class="caption">
-Figure 1.1: Scroll down the narrative (or click and use arrow keys) in this <a href="https://ontheline.github.io/otl-town-borders/">interactive map</a> to see how Hartford County, Connecticut was divided into 29 separate towns from the early 1600s to the late 1800s. Boundaries shown here are not exact, but approximated from the best available digital sources: UConn Libraries MAGIC historical maps, Atlas of Historical County Boundaries at Newberry Library, and the Connecticut State Register and Manual. View <a href="https://github.com/ontheline/otl-town-borders/">map historical sources, known issues, and the code</a>, developed by Ilya Ilyankou and Jack Dougherty.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
-</p>
-</div>
-
-<!-- includes custom-script.html for iframe height -->
-<div class="figure"><span id="fig:1910-otl-home-value"></span>
-<iframe src="https://ontheline.github.io/otl-home-value/" width="672" height="400px">
-</iframe>
-<p class="caption">
-Figure 1.2: Here’s a sample caption for a second type of interactive map
-</p>
-</div>
-<p>UPDATED Unanswered questions:</p>
-<ol style="list-style-type: decimal">
-<li>What’s the best way to control the image size in PDF output?</li>
-</ol>
-<ul>
-<li>fig.height=9 (default is 7)</li>
-<li>fig_height=9 (I tried both of these versions)</li>
-<li>out.height=“600px”</li>
-<li>out.height=“150%”</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Is <code>auto.pdf=TRUE</code> necessary? How about <code>out.width=&quot;100%&quot;</code>?</li>
-<li>What’s the best way to insert an imperative title in interactive maps, charts, scrolling PDFs? (Example: Scroll the Map).</li>
-</ol>
-<ul>
-<li>Cannot insert a title in R chunk to appear immediately above the map, which I tried</li>
-<li>Consider adding HTML title directly above digital element in GitHub repo, but separate from bookdown</li>
-<li>Consider adding bold title at beginning of caption: <strong>Image 3.3 Scroll the Map</strong>.</li>
-</ul>
-<ol start="4" style="list-style-type: decimal">
-<li>To do later: modify style.css p.caption for PDF to make underscored links visible in captions, to allow easy click to HTML version</li>
-</ol>
-<p>TESTING VIDEO IN BOOKDOWN:</p>
-
-<div class="figure"><span id="fig:vimeo-sample-vimeo"></span>
-<iframe src="https://player.vimeo.com/video/27299734" width="672" height="400px">
-</iframe>
-<p class="caption">
-Figure 1.3: Here’s a sample Vimeo caption, with option to add Markdown link and footnote.
-</p>
-</div>
-
-<div class="figure"><span id="fig:youtube-sample-video"></span>
-<iframe src="https://www.youtube.com/embed/NuWg9Jrkrpw?start=64" width="672" height="400px">
-</iframe>
-<p class="caption">
-Figure 1.4: Here’s a sample YouTube caption, with option to add Markdown link and footnote.
-</p>
-</div>
-
-<div class="figure"><span id="fig:ctda-sample-video"></span>
-<iframe src="https://collections.ctdigitalarchive.org/islandora/object/120002%3A221/datastream/MP4/view" width="672" height="400px">
-</iframe>
-<p class="caption">
-Figure 1.5: Here’s a sample CTDA video caption, with option to add Markdown link and footnote.
-</p>
-</div>
-
-<div class="figure"><span id="fig:kaltura-sample-video"></span>
-<iframe src="https://cdnapisec.kaltura.com/html5/html5lib/v2.76/mwEmbedFrame.php/p/2366381/uiconf_id/42684261/entry_id/1_1jk9ch6s?wid=_2366381&amp;iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_1jk9ch6s" width="672" height="400px">
-</iframe>
-<p class="caption">
-Figure 1.6: Here’s a sample Kaltura video caption, with option to add Markdown link and footnote.
-</p>
-</div>
-
-<div class="figure"><span id="fig:pdf-sample-local"></span>
-<iframe src="images/sample-3pp.pdf" width="672" height="400px">
-</iframe>
-<p class="caption">
-Figure 1.7: Here’s a sample local scrollable PDF caption, with option to add Markdown link and footnote.
-</p>
-</div>
-<p>References:</p>
-<ul>
-<li>R Markdown book section on figures <a href="https://bookdown.org/yihui/rmarkdown/html-document.html#figure-options" class="uri">https://bookdown.org/yihui/rmarkdown/html-document.html#figure-options</a></li>
-<li>R Markdown reference <a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf" class="uri">https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf</a></li>
-<li>On R code chunks in RMarkdown <a href="https://bookdown.org/yihui/rmarkdown/r-code.html" class="uri">https://bookdown.org/yihui/rmarkdown/r-code.html</a></li>
-<li>On R code options in knitr package <a href="https://yihui.name/knitr/options" class="uri">https://yihui.name/knitr/options</a></li>
-<li>Tips and tricks <a href="http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/#arguments-out.width-and-out.height-apply-to-both-existing-images-and-r-generated-figures" class="uri">http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/#arguments-out.width-and-out.height-apply-to-both-existing-images-and-r-generated-figures</a></li>
-</ul>
-
-</div>
-</div>
-<div class="footnotes">
-<hr />
-<ol start="1">
-<li id="fn1"><p><span class="citation">Ilya Ilyankou and Jack Dougherty, “Map: Town Borders in Hartford County, CT from 1600s to Present,” On The Line, 2017, <a href="https://github.com/OnTheLine/otl-town-borders">https://github.com/OnTheLine/otl-town-borders</a></span><a href="chapter-1-with-interactive-media-tests.html#fnref1" class="footnote-back">↩</a></p></li>
-</ol>
 </div>
             </section>
 

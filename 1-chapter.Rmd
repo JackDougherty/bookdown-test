@@ -1,77 +1,39 @@
-# Chapter 1 with interactive media tests
+# Chapter 1 interactive media tests
 
-Testing...
+Testing... How to embed video from CT Digital Archives into Bookdown without autoplay?
 
-#### Display interactive content in HTML with screenshot in PDF {-}
-- First, define a text reference for each caption, because it accepts RMarkdown cites and links. See [Bookdown section 2.2.4](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html)
-- Second, insert the figure with an R code chunk <https://bookdown.org/yihui/bookdown/r-code.html>, using the if-then-else statement from Michael Dorman, to display interactive version in HTML and static version in PDF.
-- Optional: In the body text, insert a dynamic reference to the figure in the same file (which due to floating images in PDF engines, may appear on a different page), like this: ... as shown in Figure \@ref(fig:1600s-otl-town-borders).
+Here is an oral history video as displayed on the CTDA site, which does NOT autoplay:
 
-(ref:1600s-otl-town-borders) Scroll down the narrative (or click and use arrow keys) in this [interactive map](https://ontheline.github.io/otl-town-borders/) to see how Hartford County, Connecticut was divided into 29 separate towns from the early 1600s to the late 1800s. Boundaries shown here are not exact, but approximated from the best available digital sources: UConn Libraries MAGIC historical maps, Atlas of Historical County Boundaries at Newberry Library, and the Connecticut State Register and Manual. View [map historical sources, known issues, and the code](https://github.com/ontheline/otl-town-borders/), developed by Ilya Ilyankou and Jack Dougherty.^[@ilyankouMapTownBorders2017]
+https://collections.ctdigitalarchive.org/islandora/object/120002:172
 
-<!-- includes custom-script.html for iframe height -->
-```{r 1600s-otl-town-borders, echo=FALSE, fig.cap="(ref:1600s-otl-town-borders)", fig_height=9}
-if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-town-borders/") else knitr::include_graphics("images/1600s-otl-town-borders.jpg")
-```
+Here is the CTDA MP4 video stream for that object, which runs AUTOPLAY in Chrome and FFox for Mac (and perhaps other browers). CTDA says there is no setting to turn off autoplay from datastreams
 
-(ref:1910-otl-home-value) Here's a sample caption for a second type of interactive map
+https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4
 
-<!-- includes custom-script.html for iframe height -->
-```{r 1910-otl-home-value, echo=FALSE, fig.cap="(ref:1910-otl-home-value)", fig_height=5}
-if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-home-value/") else knitr::include_graphics("images/1910-2010-home-value.jpg")
-```
+The stream above also works with this "view" ending:
 
-UPDATED Unanswered questions:
+https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view
 
-1. What's the best way to control the image size in PDF output?
-  + fig.height=9 (default is 7)
-  + fig_height=9 (I tried both of these versions)
-  + out.height="600px"
-  + out.height="150%"
-2. Is `auto.pdf=TRUE` necessary? How about `out.width="100%"`?
-3. What's the best way to insert an imperative title in interactive maps, charts, scrolling PDFs? (Example: Scroll the Map). 
-  + Cannot insert a title in R chunk to appear immediately above the map, which I tried
-  + Consider adding HTML title directly above digital element in GitHub repo, but separate from bookdown
-  + Consider adding bold title at beginning of caption: **Image 3.3 Scroll the Map**. 
-4. To do later: modify style.css p.caption for PDF to make underscored links visible in captions, to allow easy click to HTML version
-
-
-TESTING VIDEO IN BOOKDOWN:
-
-(ref:vimeo-sample-video) Here's a sample Vimeo caption, with option to add Markdown link and footnote.
-
-```{r vimeo-sample-vimeo, echo=FALSE, fig.cap="(ref:vimeo-sample-video)"}
-if(knitr::is_html_output()) knitr::include_url("https://player.vimeo.com/video/27299734") else knitr::include_graphics("images/2011-walsh-debra.jpg")
-```
-
-(ref:youtube-sample-video) Here's a sample YouTube caption, with option to add Markdown link and footnote.
-
-```{r youtube-sample-video, echo=FALSE, fig.cap="(ref:youtube-sample-video)"}
-if(knitr::is_html_output()) knitr::include_url("https://www.youtube.com/embed/NuWg9Jrkrpw?start=64") else knitr::include_graphics("images/2013-cthistory-video-screenshot.png")
-```
+Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY, even if I add
 
 (ref:ctda-sample-video) Here's a sample CTDA video caption, with option to add Markdown link and footnote.
 
 ```{r ctda-sample-video, echo=FALSE, fig.cap="(ref:ctda-sample-video)"}
-if(knitr::is_html_output()) knitr::include_url("https://collections.ctdigitalarchive.org/islandora/object/120002%3A221/datastream/MP4/view") else knitr::include_graphics("images/2014-lumpkin-mae-willie-screenshot.png")
+if(knitr::is_html_output()) knitr::include_url("https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4") else knitr::include_graphics("images/2014-lumpkin-mae-willie-screenshot.png")
 ```
 
-(ref:kaltura-sample-video) Here's a sample Kaltura video caption, with option to add Markdown link and footnote.
+See Stackoverflow discussions about HTML iframe, HTML5 video, and autoplay:
 
-```{r kaltura-sample-video, echo=FALSE, fig.cap="(ref:kaltura-sample-video)"}
-if(knitr::is_html_output()) knitr::include_url("https://cdnapisec.kaltura.com/html5/html5lib/v2.76/mwEmbedFrame.php/p/2366381/uiconf_id/42684261/entry_id/1_1jk9ch6s?wid=_2366381&iframeembed=true&playerId=kaltura_player&entry_id=1_1jk9ch6s") else knitr::include_graphics("images/2006-hartford-profiles-1.png")
-```
+https://stackoverflow.com/questions/49256942/how-to-disable-autoplay-video-in-iframe
+and
+https://stackoverflow.com/questions/31956221/how-to-disable-auto-play-for-local-video-in-iframe
 
-(ref:pdf-sample-local) Here's a sample local scrollable PDF caption, with option to add Markdown link and footnote.
 
-```{r pdf-sample-local, echo=FALSE, fig.cap="(ref:pdf-sample-local)"}
-if(knitr::is_html_output()) knitr::include_url("images/sample-3pp.pdf") else knitr::include_graphics("images/sample-pdf-screenshot.png")
-```
 
-References:
+See Google Chrome Developer autoplay policy change in April 2018:
 
-- R Markdown book section on figures https://bookdown.org/yihui/rmarkdown/html-document.html#figure-options
-- R Markdown reference https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf
-- On R code chunks in RMarkdown https://bookdown.org/yihui/rmarkdown/r-code.html
-- On R code options in knitr package https://yihui.name/knitr/options
-- Tips and tricks http://zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/#arguments-out.width-and-out.height-apply-to-both-existing-images-and-r-generated-figures
+https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
+
+See Firefox Developer note for Video HTML5 autoplay:
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
