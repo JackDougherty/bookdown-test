@@ -45,7 +45,7 @@ The HMTL5 video tag solution stops autoplay, but it is NOT ideal for Bookdown-ge
   - figure auto-numbering, such as Figure 1.2, 1.3, etc.
 
 
-## Best workarounds, so far:
+## Best workarounds, so far {-}
 1. Use HTML5 video tag, manually insert a caption, ignore missing figure number, and ignore that this doesn't work in the PDF version.
 2. Upload full video to CTDA for historical preservation, and insert only a short video clip of relevant portion to Vimeo or YouTube, then insert the latter in Bookdown with iframe. Since Vimeo/YouTube clips do NOT autoplay, this will work with R code-chunk method above.
 
