@@ -21,9 +21,9 @@ output:
     css: css/style.css
     includes:
       in_header: custom-scripts.html
-    split_by: chapter
-    split_bib: true
+    split_by: section
     number_sections: true
+    split_bib: true
     pandoc_args: [ "--csl", "chicago-fullnote-bibliography.csl" ]
     config:
       toc:

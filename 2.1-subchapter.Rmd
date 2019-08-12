@@ -1,4 +1,4 @@
-## Subchapter 2.1 for note testing {-}
+## Sample subchapter {#subchapter}
 
 More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here More text here.[@penningtonPoliticalHistorySchool2007]
 
