@@ -118,10 +118,22 @@ $(document).ready(function() {
 <div id="question" class="section level4 unnumbered" number="">
 <h4 class="unnumbered" number="">Question</h4>
 <p>How to embed video stream from CT Digital Archives into Bookdown, WITHOUT autoplay, regardless of whether the user’s browser is set to block autoplay?</p>
-<p><strong>BEFORE TESTING</strong>: Make sure that your browser settings do NOT block autoplay content by default, since we cannot ensure that users will have same browser settings as developers.</p>
+<p><strong>BEFORE TESTING</strong>: TEST in both Firefox and Chrome for auto-play issue. Make sure that your browser settings do NOT block autoplay content by default, since we cannot ensure that users will have same browser settings as developers.</p>
+<div id="best-solution-so-far-with-no-autoplay-youtube-video-selected-clip-iframe-in-web-edition-static-image-in-pdf-edition-caption-and-footnote-to-full-video-at-ctda" class="section level5 unnumbered" number="">
+<h5 class="unnumbered" number="">Best solution so far (with no autoplay): YouTube video (selected clip) iframe in web edition, static image in PDF edition, caption and footnote to full video at CTDA</h5>
+
+<div class="figure"><span id="fig:youtube-sample-video"></span>
+<iframe src="https://www.youtube.com/embed/NuWg9Jrkrpw?start=64" width="672" height="400px">
+</iframe>
+<p class="caption">
+Figure 1: Here’s a sample YouTube caption, with option to add Markdown links and footnote to full video at CTDA.
+</p>
 </div>
-<div id="background" class="section level4 unnumbered" number="">
-<h4 class="unnumbered" number="">Background</h4>
+<p>Upload full video to CTDA for historical preservation, and insert only a short video clip of relevant portion to YouTube (looks cleaner) or Vimeo, then insert the latter in Bookdown with iframe. Since YouTube/Vimeo clips do NOT autoplay, this will work with R code-chunk method above.</p>
+</div>
+</div>
+<div id="issue-background" class="section level4 unnumbered" number="">
+<h4 class="unnumbered" number="">Issue Background</h4>
 <p>Here is an oral history video as displayed on the CTDA site, which does NOT autoplay:</p>
 <p><a href="https://collections.ctdigitalarchive.org/islandora/object/120002:172" class="uri">https://collections.ctdigitalarchive.org/islandora/object/120002:172</a></p>
 <p>Here is the CTDA MP4 video stream for that object, which runs AUTOPLAY in Chrome and FFox for Mac (and perhaps other browsers). CTDA says there is no setting to turn off autoplay from datastreams</p>
@@ -137,7 +149,7 @@ $(document).ready(function() {
 <iframe src="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4?autoplay=false" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 1: Here’s a sample CTDA video caption, with option to add Markdown link and footnote.
+Figure 2: Here’s a sample CTDA video caption, with option to add Markdown link and footnote.
 </p>
 </div>
 <p>Question: is there a way to add a “no autoplay” command to the iframe through jQuery in the custom-script.html?</p>
@@ -158,23 +170,16 @@ Figure 1: Here’s a sample CTDA video caption, with option to add Markdown link
 </ul></li>
 </ul>
 </div>
-<div id="trying-iframe-solution-with-short-video-clip-stored-locally-with-custom-script" class="section level4 unnumbered" number="">
-<h4 class="unnumbered" number="">Trying iframe solution with short video clip, stored locally, with custom script</h4>
+<div id="trying-iframe-solution-with-short-video-clip-stored-locally-with-custom-script---but-it-autoplays" class="section level4 unnumbered" number="">
+<h4 class="unnumbered" number="">Trying iframe solution with short video clip, stored locally, with custom script - but it autoplays</h4>
 
 <div class="figure"><span id="fig:sample-clip"></span>
 <iframe src="images/2011-bernstein-demo-clip.mp4" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 2: Here’s a sample local video clip caption, with option to add Markdown link and footnote.
+Figure 3: Here’s a sample local video clip caption, with option to add Markdown link and footnote.
 </p>
 </div>
-</div>
-<div id="best-workarounds-so-far" class="section level4 unnumbered" number="">
-<h4 class="unnumbered" number="">Best workarounds, so far</h4>
-<ol style="list-style-type: decimal">
-<li>Use HTML5 video tag, manually insert a caption, ignore missing figure number, and ignore that this doesn’t work in the PDF version.</li>
-<li>Upload full video to CTDA for historical preservation, and insert only a short video clip of relevant portion to Vimeo or YouTube, then insert the latter in Bookdown with iframe. Since Vimeo/YouTube clips do NOT autoplay, this will work with R code-chunk method above.</li>
-</ol>
 </div>
 <div id="example-of-vimeo-video-clip-in-web-edition-no-autoplay-with-static-image-in-pdf-edition" class="section level4 unnumbered" number="">
 <h4 class="unnumbered" number="">Example of Vimeo video clip in web edition (no autoplay), with static image in PDF edition,</h4>
@@ -183,7 +188,7 @@ Figure 2: Here’s a sample local video clip caption, with option to add Markdow
 <iframe src="https://player.vimeo.com/video/27299734" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 3: Here’s a sample Vimeo caption, with option to add Markdown links and footnote.
+Figure 4: Here’s a sample Vimeo caption, with option to add Markdown links and footnote.
 </p>
 </div>
 </div>
