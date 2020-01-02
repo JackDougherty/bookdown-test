@@ -1,11 +1,11 @@
 # Media Tests {#media}
 
-### Question {-}
+#### Question {-}
 How to embed video stream from CT Digital Archives into Bookdown, WITHOUT autoplay, regardless of whether the user's browser is set to block autoplay?
 
 **BEFORE TESTING**: Make sure that your browser settings do NOT block autoplay content by default, since we cannot ensure that users will have same browser settings as developers.
 
-### Background {-}
+#### Background {-}
 Here is an oral history video as displayed on the CTDA site, which does NOT autoplay:
 
 https://collections.ctdigitalarchive.org/islandora/object/120002:172
@@ -18,7 +18,7 @@ The stream above also works with this "view" ending:
 
 https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view
 
-### Trying iframe solution {-}
+#### Trying iframe solution {-}
 Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY using the iframe method, even if I add "?autoplay=0" or "?autoplay=false" to the end of the src string, as suggested in Stackoverflow further below.
 
 (ref:ctda-sample-video) Here's a sample CTDA video caption, with option to add Markdown link and footnote.
@@ -30,7 +30,7 @@ if(knitr::is_html_output()) knitr::include_url("https://collections.ctdigitalarc
 Question: is there a way to add a "no autoplay" command to the iframe through jQuery in the custom-script.html?
 
 
-### Trying HTML5 video tag solution {-}
+#### Trying HTML5 video tag solution {-}
 Here's a solution using the [HTML5 video tag](https://www.w3schools.com/tags/tag_video.asp), which simply says NOT to insert "autoplay".
 
 <video width="640" height="360" controls>
@@ -44,7 +44,7 @@ The HMTL5 video tag solution stops autoplay, but it is NOT ideal for Bookdown-ge
   - the if-else statement in the R code-chunk that places the interactive iframe in HTML and the static floating image in the PDF, but the same caption for both
   - figure auto-numbering, such as Figure 1.2, 1.3, etc.
 
-### Trying iframe solution with short video clip, stored locally, with custom script {-}
+#### Trying iframe solution with short video clip, stored locally, with custom script {-}
 (ref:sample-clip) Here's a sample local video clip caption, with option to add Markdown link and footnote.
 
 ```{r sample-clip, echo=FALSE, fig.cap="(ref:sample-clip)"}
@@ -52,12 +52,12 @@ if(knitr::is_html_output()) knitr::include_url("images/BernsteinSimon2011clip.mp
 ```
 
 
-### Best workarounds, so far {-}
+#### Best workarounds, so far {-}
 1. Use HTML5 video tag, manually insert a caption, ignore missing figure number, and ignore that this doesn't work in the PDF version.
 2. Upload full video to CTDA for historical preservation, and insert only a short video clip of relevant portion to Vimeo or YouTube, then insert the latter in Bookdown with iframe. Since Vimeo/YouTube clips do NOT autoplay, this will work with R code-chunk method above.
 
 
-### Example of Vimeo video clip in web edition (no autoplay), with static image in PDF edition, {-}
+#### Example of Vimeo video clip in web edition (no autoplay), with static image in PDF edition, {-}
 (ref:vimeo-sample-video) Here's a sample Vimeo caption, with option to add Markdown links and footnote.
 
 ```{r vimeo-sample-vimeo, echo=FALSE, fig.cap="(ref:vimeo-sample-video)"}
@@ -65,7 +65,7 @@ if(knitr::is_html_output()) knitr::include_url("https://player.vimeo.com/video/2
 ```
 
 
-### More resources {-}
+#### More resources {-}
 See Stackoverflow discussions about HTML iframe, HTML5 video, and autoplay:
 
 https://stackoverflow.com/questions/49256942/how-to-disable-autoplay-video-in-iframe
