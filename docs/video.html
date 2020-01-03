@@ -56,10 +56,8 @@
 $(document).ready(function() {
   $("#fig\\:1600s-otl-town-borders~iframe").attr("height", "600px");
   $("#fig\\:1910-otl-home-value~iframe").attr("height", "600px");
+  $("#fig\\:1876-scribners-monthly~iframe").attr("height", "660px");
   // similarly you can change heights for other iframes
-  $('iframe').on('load', function() {
-     $('iframe').contents().find('video').removeAttr('autoplay');
-   })
 })
 </script>
 
@@ -128,6 +126,18 @@ Figure 1: Here’s a sample YouTube caption, with option to add Markdown links a
 </p>
 </div>
 </div>
+<div id="testing-if-kaltura-avoids-autoplay" class="section level5 unnumbered" number="">
+<h5 class="unnumbered" number="">Testing if Kaltura avoids autoplay</h5>
+<p>…as shown below in <a href="video.html#fig:2011-sheff-elizabeth2">2</a>.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. See additional oral histories with participants in the Sheff v O’Neill school desegregation lawsuit.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+
+<div class="figure"><span id="fig:2011-sheff-elizabeth2"></span>
+<iframe src="https://cdnapisec.kaltura.com/html5/html5lib/v2.76/mwEmbedFrame.php/p/2366381/uiconf_id/42684261/entry_id/1_66aksvf1?wid=_2366381&amp;iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_66aksvf1" width="672" height="400px">
+</iframe>
+<p class="caption">
+Figure 2: View the <a href="http://digitalrepository.trincoll.edu/cssp_ohistory/16">oral history video interview and transcript</a> with Elizabeth Horton Sheff in 2011.
+</p>
+</div>
+</div>
 <div id="issue-background" class="section level4 unnumbered" number="">
 <h4 class="unnumbered" number="">Issue Background</h4>
 <p>Here is an oral history video as displayed on the CTDA site, which does NOT autoplay:</p>
@@ -145,7 +155,7 @@ Figure 1: Here’s a sample YouTube caption, with option to add Markdown links a
 <iframe src="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4?autoplay=false" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 2: Here’s a sample CTDA video caption, with option to add Markdown link and footnote.
+Figure 3: Here’s a sample CTDA video caption, with option to add Markdown link and footnote.
 </p>
 </div>
 <p>Also tried but did not succeed in adding a “no autoplay” command to the iframe through jQuery in the custom-script.html</p>
@@ -173,7 +183,7 @@ Figure 2: Here’s a sample CTDA video caption, with option to add Markdown link
 <iframe src="images/2011-bernstein-demo-clip.mp4" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 3: Here’s a sample local video clip caption, with option to add Markdown link and footnote.
+Figure 4: Here’s a sample local video clip caption, with option to add Markdown link and footnote.
 </p>
 </div>
 <p>An alternative method is to store the video locally and display with HTML5 video tags, with a custom-script to stop auto-play. But Bookdown does not recognize HMTL5, so no figure auto-numbering and captions will be displayed, and therefore not ideal, as described above.</p>
@@ -190,6 +200,13 @@ and
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" class="uri">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video</a></p>
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><span class="citation">Elizabeth Horton Sheff, “Oral History Interview on Sheff Vs. O’Neill” (Cities, Suburbs, Schools Project, Trinity College Digital Repository, July 28, 2011), <a href="http://digitalrepository.trincoll.edu/cssp_ohistory/16" role="doc-biblioref">http://digitalrepository.trincoll.edu/cssp_ohistory/16</a></span><a href="video.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><span class="citation">Trinity College Digital Repository Cities Suburbs and Schools Project Archives, accessed July 15, 2019, <a href="https://digitalrepository.trincoll.edu/cssp_papers/" role="doc-biblioref">https://digitalrepository.trincoll.edu/cssp_papers/</a></span>; <span class="citation">On The Line Digital Archives, Connecticut Digital Archives, n.d., <a href="https://collections.ctdigitalarchive.org/islandora/object/120002:otl" role="doc-biblioref">https://collections.ctdigitalarchive.org/islandora/object/120002:otl</a></span>.<a href="video.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 

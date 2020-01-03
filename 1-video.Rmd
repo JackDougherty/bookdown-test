@@ -11,6 +11,16 @@ Problem: Video stream content from CT Digital Archives and Trinity Kaltura autom
 if(knitr::is_html_output()) knitr::include_url("https://www.youtube.com/embed/NuWg9Jrkrpw?start=64") else knitr::include_graphics("images/2013-cthistory-video-screenshot.png")
 ```
 
+##### Testing if Kaltura avoids autoplay {-}
+
+...as shown below in \@ref(fig:2011-sheff-elizabeth2).^[@sheffOralHistoryInterview2011]. See additional oral histories with participants in the Sheff v O'Neill school desegregation lawsuit.^[@citiessuburbsandschoolsprojectarchivestrinitycollegedigitalrepository; @onthelinedigitalarchivesconnecticutdigitalarchives.]
+
+(ref:2011-sheff-elizabeth2) View the [oral history video interview and transcript](http://digitalrepository.trincoll.edu/cssp_ohistory/16) with Elizabeth Horton Sheff in 2011.
+
+```{r 2011-sheff-elizabeth2, echo=FALSE, fig.cap="(ref:2011-sheff-elizabeth2)"}
+if(knitr::is_html_output()) knitr::include_url("https://cdnapisec.kaltura.com/html5/html5lib/v2.76/mwEmbedFrame.php/p/2366381/uiconf_id/42684261/entry_id/1_66aksvf1?wid=_2366381&iframeembed=true&playerId=kaltura_player&entry_id=1_66aksvf1") else knitr::include_graphics("images/2011-sheff-elizabeth.jpg")
+```
+
 #### Issue Background {-}
 Here is an oral history video as displayed on the CTDA site, which does NOT autoplay:
 

@@ -1,6 +1,15 @@
 # Notes chapter test {#notes}
 
-Minor test for note placement
+Testing dynamic reference with footnote
+
+In addition its financial assets, Clark also praised Hartford's abundant cultural riches. The nation's best-known authors, Samuel Clemens (more commonly known as Mark Twain) and Harriet Beecher Stowe (whose best-seller, *Uncle Tom's Cabin*, influenced the Civil War), both took up residence in the city, alongside many of their literary companions, editors, and publishers. In addition to serving as the state capital, Hartford prized its extensive libraries, museum, and hospital. "The Hartford school buildings are said to the finest in the State," Clark added, and called special attention to his alma mater, Hartford Public High School, the second oldest in the nation, which also enjoyed "a reputation with all the leading colleges as one of the best of all the preparatory schools,” as shown in Figure \@ref(fig:1876-scribners-monthly).^[@clarkCharterOakCity1876] In fact, the education that young people received in the city's public school system far surpassed what was available in the outlying rural towns, known today as the suburbs.
+
+(ref:1876-scribners-monthly) Scroll [the full-screen document](https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html) from *Scribner's Monthly* in 1876, which declared Hartford as "the richest city in the United States," relative to its population. Digitized by Google Books.
+
+<!-- set iframe height to 660px and width to 700px in custom-scripts.html -->
+```{r 1876-scribners-monthly, echo=FALSE, fig.cap="(ref:1876-scribners-monthly)"}
+if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html") else knitr::include_graphics("images/1876-scribners-monthly.png")
+```
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[@tegelerFindingCommonGround2011]
 
