@@ -21,11 +21,11 @@ if(knitr::is_html_output()) knitr::include_url("https://www.youtube.com/embed/Nu
 if(knitr::is_html_output()) knitr::include_url("https://cdnapisec.kaltura.com/html5/html5lib/v2.76/mwEmbedFrame.php/p/2366381/uiconf_id/42684261/entry_id/1_66aksvf1?wid=_2366381&iframeembed=true&playerId=kaltura_player&entry_id=1_66aksvf1") else knitr::include_graphics("images/2011-sheff-elizabeth.jpg")
 ```
 
-#### Testing: Kaltura default embed code (long and ugly) - does it avoid autoplay? {-}
+#### Works but not properly formatted: Kaltura default embed code avoids autoplay {-}
 
-...as shown below in \@ref(fig:2011-sheff-elizabeth3).^[@sheffOralHistoryInterview2011]. See additional oral histories with participants in the Sheff v O'Neill school desegregation lawsuit.^[@citiessuburbsandschoolsprojectarchivestrinitycollegedigitalrepository; @onthelinedigitalarchivesconnecticutdigitalarchives.]
+...as shown below in \@ref(fig:2011-sheff-elizabeth3).This is actually Anne Goldstein.
 
-(ref:2011-sheff-elizabeth3) View the [oral history video interview and transcript](http://digitalrepository.trincoll.edu/cssp_ohistory/16) with Elizabeth Horton Sheff in 2011.
+(ref:2011-sheff-elizabeth3) This is actually Anne Goldstein sample video.
 
 ```{r 2011-sheff-elizabeth3, echo=FALSE, fig.cap="(ref:2011-sheff-elizabeth3)"}
 if(knitr::is_html_output()) knitr::include_url("https://cdnapisec.kaltura.com/index.php/extwidget/preview/partner_id/2366381/uiconf_id/42684261/entry_id/1_qwum4bmu/embed/dynamic") else knitr::include_graphics("images/2011-sheff-elizabeth.jpg")
@@ -44,7 +44,7 @@ The stream above also works with this "view" ending, but also runs autoplay:
 
 <https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view>
 
-#### Failed: iframe  with autoplay=false {-}
+#### Failed: CTDA iframe with autoplay=false {-}
 Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY using the iframe method, even if I add "?autoplay=0" or "?autoplay=false" to the end of the src string, as suggested in Stackoverflow further below.
 
 (ref:ctda-sample-video) Here's a sample CTDA video caption, with option to add Markdown link and footnote.
