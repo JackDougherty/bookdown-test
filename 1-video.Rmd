@@ -4,14 +4,14 @@ Problem: Video stream content from CT Digital Archives and Trinity Kaltura autom
 
 **BEFORE TESTING**: TEST in both Firefox and Chrome for auto-play issue. Make sure that your browser settings do NOT block autoplay content by default, since we cannot ensure that users will have same browser settings as developers.
 
-##### Best solution so far: Upload relevant clip to YouTube to display as iframe in web edition, with static image in PDF/Word editions, with caption link and footnote to full video, uploaded for historical preservation to CTDA or Kaltura {-}
+#### Best solution so far: Upload relevant clip to YouTube to display as iframe in web edition, with static image in PDF/Word editions, with caption link and footnote to full video, uploaded for historical preservation to CTDA or Kaltura {-}
 (ref:youtube-sample-video) Here's a sample YouTube caption, with option to add Markdown links and footnote to full video at CTDA.
 
 ```{r youtube-sample-video, echo=FALSE, fig.cap="(ref:youtube-sample-video)"}
 if(knitr::is_html_output()) knitr::include_url("https://www.youtube.com/embed/NuWg9Jrkrpw?start=64") else knitr::include_graphics("images/2013-cthistory-video-screenshot.png")
 ```
 
-##### Testing if Kaltura avoids autoplay {-}
+#### Works: Kaltura HTML5 embed avoids autoplay, but is it still supported? {-}
 
 ...as shown below in \@ref(fig:2011-sheff-elizabeth2).^[@sheffOralHistoryInterview2011]. See additional oral histories with participants in the Sheff v O'Neill school desegregation lawsuit.^[@citiessuburbsandschoolsprojectarchivestrinitycollegedigitalrepository; @onthelinedigitalarchivesconnecticutdigitalarchives.]
 
@@ -19,6 +19,16 @@ if(knitr::is_html_output()) knitr::include_url("https://www.youtube.com/embed/Nu
 
 ```{r 2011-sheff-elizabeth2, echo=FALSE, fig.cap="(ref:2011-sheff-elizabeth2)"}
 if(knitr::is_html_output()) knitr::include_url("https://cdnapisec.kaltura.com/html5/html5lib/v2.76/mwEmbedFrame.php/p/2366381/uiconf_id/42684261/entry_id/1_66aksvf1?wid=_2366381&iframeembed=true&playerId=kaltura_player&entry_id=1_66aksvf1") else knitr::include_graphics("images/2011-sheff-elizabeth.jpg")
+```
+
+#### Testing: Kaltura default embed code (long and ugly) - does it avoid autoplay? {-}
+
+...as shown below in \@ref(fig:2011-sheff-elizabeth3).^[@sheffOralHistoryInterview2011]. See additional oral histories with participants in the Sheff v O'Neill school desegregation lawsuit.^[@citiessuburbsandschoolsprojectarchivestrinitycollegedigitalrepository; @onthelinedigitalarchivesconnecticutdigitalarchives.]
+
+(ref:2011-sheff-elizabeth3) View the [oral history video interview and transcript](http://digitalrepository.trincoll.edu/cssp_ohistory/16) with Elizabeth Horton Sheff in 2011.
+
+```{r 2011-sheff-elizabeth3, echo=FALSE, fig.cap="(ref:2011-sheff-elizabeth3)"}
+if(knitr::is_html_output()) knitr::include_url("https://cdnapisec.kaltura.com/index.php/extwidget/preview/partner_id/2366381/uiconf_id/42684261/entry_id/1_qwum4bmu/embed/dynamic") else knitr::include_graphics("images/2011-sheff-elizabeth.jpg")
 ```
 
 #### Issue Background {-}

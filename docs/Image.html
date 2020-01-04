@@ -25,7 +25,7 @@
 <meta name="author" content="and contributors" />
 
 
-<meta name="date" content="2020-01-03" />
+<meta name="date" content="2020-01-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -113,7 +113,7 @@ $(document).ready(function() {
             <section class="normal" id="section-">
 <div id="Image" class="section level1" number="3">
 <h1 number="3"><span class="header-section-number">3</span> PDF image testing</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="citation"><a href="#fn18" class="footnote-ref" id="fnref18"><sup>18</sup></a></span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="citation"><a href="#fn20" class="footnote-ref" id="fnref20"><sup>20</sup></a></span></p>
 <div id="testing-with-and-without-auto_pdf" class="section level4 unnumbered" number="">
 <h4 class="unnumbered" number="">Testing with and without auto_pdf</h4>
 <ul>
@@ -123,7 +123,7 @@ $(document).ready(function() {
 <li>To reduce the width (or height) of the output, add <code>out.width="30%"</code> to the code chunk, which works for Web edition and also PDF edition. If width is less than full, also insert <code>fig.align="center"</code>.</li>
 <li>To display interactive content in the Web edition and a static image in the PDF edition, create both elements and insert an if-else statement in the R code chunk to display these elements in different outputs, as shown below. (Thanks to Michael Dorman for this tip.)</li>
 <li>If the interactive content includes an iframe (for a map or chart), the default height will be 400 pixels. To adjust the iframe height (or width), insert a line of code in <code>custom-scripts.html</code> and add a code comment to the text to serve as a reminder, as shown below. Also, make sure that the <code>index.Rmd</code> file includes the custom script in the header, as described in the section above.</li>
-<li>Optional: In the body text, insert a dynamic reference to the figure in the same file, because PDF engine creates floating images that may be placed on the next page. Sample dynamic reference to a figure further below: … as shown in Figure <a href="Image.html#fig:sample-interactive">8</a>.</li>
+<li>Optional: In the body text, insert a dynamic reference to the figure in the same file, because PDF engine creates floating images that may be placed on the next page. Sample dynamic reference to a figure further below: … as shown in Figure <a href="Image.html#fig:sample-interactive">9</a>.</li>
 <li>Reminder: If the image appears a second time in the book, in a separate chapter, be sure to relabel the text ref: year-title2.</li>
 <li>Note: Bookdown does not auto-number figures in the <code>index.Rmd</code> file, which serves as a preface or introduction.</li>
 </ul>
@@ -138,7 +138,7 @@ $(document).ready(function() {
 <div class="figure"><span id="fig:sample-static-image"></span>
 <img src="images/1937-holc-hartford-map-scan.jpg" alt="Caption for sample static image, with Markdown formatting, links, citation."  />
 <p class="caption">
-Figure 6: Caption for sample static image, with Markdown formatting, links, citation.
+Figure 7: Caption for sample static image, with Markdown formatting, links, citation.
 </p>
 </div>
 </div>
@@ -148,10 +148,10 @@ Figure 6: Caption for sample static image, with Markdown formatting, links, cita
 <div class="figure"><span id="fig:sample-static-image2"></span>
 <img src="images/1937-holc-hartford-map-scan.jpg" alt="Caption for sample static image, with Markdown formatting, links, citation." width="50%" />
 <p class="caption">
-Figure 7: Caption for sample static image, with Markdown formatting, links, citation.
+Figure 8: Caption for sample static image, with Markdown formatting, links, citation.
 </p>
 </div>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="citation"><a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a></span></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="citation"><a href="#fn21" class="footnote-ref" id="fnref21"><sup>21</sup></a></span></p>
 </div>
 <div id="interactive-iframe-in-web-edition-with-adjusted-height-static-image-in-pdf-edition-with-auto_pdf" class="section level5 unnumbered" number="">
 <h5 class="unnumbered" number="">Interactive iframe in web edition (with adjusted height), static image in PDF edition, WITH auto_pdf</h5>
@@ -161,7 +161,7 @@ Figure 7: Caption for sample static image, with Markdown formatting, links, cita
 <iframe src="https://ontheline.github.io/otl-redlining/" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 8: Caption for all versions here, with link to <a href="https://ontheline.github.io/otl-redlining/index-caption.html">full-screen interactive map with its own caption</a>, and link to sources and the code View <a href="https://github.com/ontheline/otl-redlining/">map historical sources, known issues, and the code</a>, developed by Ilya Ilyankou and Jack Dougherty, with footnote (if I can get it to work)
+Figure 9: Caption for all versions here, with link to <a href="https://ontheline.github.io/otl-redlining/index-caption.html">full-screen interactive map with its own caption</a>, and link to sources and the code View <a href="https://github.com/ontheline/otl-redlining/">map historical sources, known issues, and the code</a>, developed by Ilya Ilyankou and Jack Dougherty, with footnote (if I can get it to work)
 </p>
 </div>
 </div>
@@ -173,7 +173,7 @@ Figure 8: Caption for all versions here, with link to <a href="https://ontheline
 <iframe src="https://ontheline.github.io/otl-redlining/" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 9: Caption for all versions here, with link to <a href="https://ontheline.github.io/otl-redlining/index-caption.html">full-screen interactive map with its own caption</a>, and link to sources and the code View <a href="https://github.com/ontheline/otl-redlining/">map historical sources, known issues, and the code</a>, developed by Ilya Ilyankou and Jack Dougherty, with footnote (if I can get it to work)
+Figure 10: Caption for all versions here, with link to <a href="https://ontheline.github.io/otl-redlining/index-caption.html">full-screen interactive map with its own caption</a>, and link to sources and the code View <a href="https://github.com/ontheline/otl-redlining/">map historical sources, known issues, and the code</a>, developed by Ilya Ilyankou and Jack Dougherty, with footnote (if I can get it to work)
 </p>
 </div>
 
@@ -182,9 +182,9 @@ Figure 9: Caption for all versions here, with link to <a href="https://ontheline
 </div>
 <div class="footnotes">
 <hr />
-<ol start="18">
-<li id="fn18"><p>Tegeler, <em>Finding Common Ground</em>.<a href="Image.html#fnref18" class="footnote-back">↩︎</a></p></li>
-<li id="fn19"><p>Whitten, <em>West Hartford Zoning</em>.<a href="Image.html#fnref19" class="footnote-back">↩︎</a></p></li>
+<ol start="20">
+<li id="fn20"><p>Tegeler, <em>Finding Common Ground</em>.<a href="Image.html#fnref20" class="footnote-back">↩︎</a></p></li>
+<li id="fn21"><p>Whitten, <em>West Hartford Zoning</em>.<a href="Image.html#fnref21" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
