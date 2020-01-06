@@ -25,7 +25,7 @@
 <meta name="author" content="and contributors" />
 
 
-<meta name="date" content="2020-01-04" />
+<meta name="date" content="2020-01-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -90,7 +90,11 @@ $(document).ready(function() {
 <li class="chapter" data-level="2.1" data-path="subchapter.html"><a href="subchapter.html"><i class="fa fa-check"></i><b>2.1</b> Notes subchapter test</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="Image.html"><a href="Image.html"><i class="fa fa-check"></i><b>3</b> PDF image testing</a></li>
-<li class="chapter" data-level="4" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>4</b> Bibliography</a></li>
+<li class="chapter" data-level="4" data-path="table.html"><a href="table.html"><i class="fa fa-check"></i><b>4</b> Table test</a>
+<ul>
+<li class="chapter" data-level="" data-path="authors-and-contributors-1.html"><a href="authors-and-contributors-1.html"><i class="fa fa-check"></i>Authors and Contributors</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>5</b> Bibliography</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
 
@@ -122,7 +126,7 @@ $(document).ready(function() {
 <iframe src="https://www.youtube.com/embed/NuWg9Jrkrpw?start=64" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 1: Here’s a sample YouTube caption, with option to add Markdown links and footnote to full video at CTDA.
+Image 1: Here’s a sample YouTube caption, with option to add Markdown links and footnote to full video at CTDA.
 </p>
 </div>
 </div>
@@ -134,19 +138,19 @@ Figure 1: Here’s a sample YouTube caption, with option to add Markdown links a
 <iframe src="https://cdnapisec.kaltura.com/html5/html5lib/v2.76/mwEmbedFrame.php/p/2366381/uiconf_id/42684261/entry_id/1_66aksvf1?wid=_2366381&amp;iframeembed=true&amp;playerId=kaltura_player&amp;entry_id=1_66aksvf1" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 2: View the <a href="http://digitalrepository.trincoll.edu/cssp_ohistory/16">oral history video interview and transcript</a> with Elizabeth Horton Sheff in 2011.
+Image 2: View the <a href="http://digitalrepository.trincoll.edu/cssp_ohistory/16">oral history video interview and transcript</a> with Elizabeth Horton Sheff in 2011.
 </p>
 </div>
 </div>
-<div id="testing-kaltura-default-embed-code-long-and-ugly---does-it-avoid-autoplay" class="section level4 unnumbered" number="">
-<h4 class="unnumbered" number="">Testing: Kaltura default embed code (long and ugly) - does it avoid autoplay?</h4>
-<p>…as shown below in <a href="video.html#fig:2011-sheff-elizabeth3">3</a>.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. See additional oral histories with participants in the Sheff v O’Neill school desegregation lawsuit.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p>
+<div id="works-but-not-properly-formatted-kaltura-default-embed-code-avoids-autoplay" class="section level4 unnumbered" number="">
+<h4 class="unnumbered" number="">Works but not properly formatted: Kaltura default embed code avoids autoplay</h4>
+<p>…as shown below in <a href="video.html#fig:2011-sheff-elizabeth3">3</a>.This is actually Anne Goldstein.</p>
 
 <div class="figure"><span id="fig:2011-sheff-elizabeth3"></span>
 <iframe src="https://cdnapisec.kaltura.com/index.php/extwidget/preview/partner_id/2366381/uiconf_id/42684261/entry_id/1_qwum4bmu/embed/dynamic" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 3: View the <a href="http://digitalrepository.trincoll.edu/cssp_ohistory/16">oral history video interview and transcript</a> with Elizabeth Horton Sheff in 2011.
+Image 3: This is actually Anne Goldstein sample video.
 </p>
 </div>
 </div>
@@ -159,15 +163,15 @@ Figure 3: View the <a href="http://digitalrepository.trincoll.edu/cssp_ohistory/
 <p>The stream above also works with this “view” ending, but also runs autoplay:</p>
 <p><a href="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view" class="uri">https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view</a></p>
 </div>
-<div id="failed-iframe-with-autoplayfalse" class="section level4 unnumbered" number="">
-<h4 class="unnumbered" number="">Failed: iframe with autoplay=false</h4>
+<div id="failed-ctda-iframe-with-autoplayfalse" class="section level4 unnumbered" number="">
+<h4 class="unnumbered" number="">Failed: CTDA iframe with autoplay=false</h4>
 <p>Here is Bookdown code-chunk that displays CTDA video in web edition, static image in PDF edition, BUT CANNOT TURN OFF AUTOPLAY using the iframe method, even if I add “?autoplay=0” or “?autoplay=false” to the end of the src string, as suggested in Stackoverflow further below.</p>
 
 <div class="figure"><span id="fig:ctda-sample-video"></span>
 <iframe src="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4?autoplay=false" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 4: Here’s a sample CTDA video caption, with option to add Markdown link and footnote.
+Image 4: Here’s a sample CTDA video caption, with option to add Markdown link and footnote.
 </p>
 </div>
 <p>Also tried but did not succeed in adding a “no autoplay” command to the iframe through jQuery in the custom-script.html</p>
@@ -195,7 +199,7 @@ Figure 4: Here’s a sample CTDA video caption, with option to add Markdown link
 <iframe src="images/2011-bernstein-demo-clip.mp4" width="672" height="400px">
 </iframe>
 <p class="caption">
-Figure 5: Here’s a sample local video clip caption, with option to add Markdown link and footnote.
+Image 5: Here’s a sample local video clip caption, with option to add Markdown link and footnote.
 </p>
 </div>
 <p>An alternative method is to store the video locally and display with HTML5 video tags, with a custom-script to stop auto-play. But Bookdown does not recognize HMTL5, so no figure auto-numbering and captions will be displayed, and therefore not ideal, as described above.</p>
@@ -218,8 +222,6 @@ and
 <ol start="1">
 <li id="fn1"><p><span class="citation">Elizabeth Horton Sheff, “Oral History Interview on Sheff Vs. O’Neill” (Cities, Suburbs, Schools Project, Trinity College Digital Repository, July 28, 2011), <a href="http://digitalrepository.trincoll.edu/cssp_ohistory/16" role="doc-biblioref">http://digitalrepository.trincoll.edu/cssp_ohistory/16</a></span><a href="video.html#fnref1" class="footnote-back">↩︎</a></p></li>
 <li id="fn2"><p><span class="citation">Trinity College Digital Repository Cities Suburbs and Schools Project Archives, accessed July 15, 2019, <a href="https://digitalrepository.trincoll.edu/cssp_papers/" role="doc-biblioref">https://digitalrepository.trincoll.edu/cssp_papers/</a></span>; <span class="citation">On The Line Digital Archives, Connecticut Digital Archives, n.d., <a href="https://collections.ctdigitalarchive.org/islandora/object/120002:otl" role="doc-biblioref">https://collections.ctdigitalarchive.org/islandora/object/120002:otl</a></span>.<a href="video.html#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p><span class="citation">Sheff, “Oral History Interview on Sheff Vs. O’Neill.”</span><a href="video.html#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p><span class="citation">Cities Suburbs and Schools Project Archives</span>; <span class="citation">On The Line Digital Archives, Connecticut Digital Archives</span>.<a href="video.html#fnref4" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -267,7 +269,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": null,
+"link": "https://github.com/jackdougherty/bookdown-test/edit/master/1-video.Rmd",
 "text": null
 },
 "download": ["bookdown-test.pdf", "bookdown-test.epub", "bookdown-test.mobi", "bookdown-test.docx"],

@@ -7,7 +7,7 @@ In addition its financial assets, Clark also praised Hartford's abundant cultura
 (ref:1876-scribners-monthly) Scroll [the full-screen document](https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html) from *Scribner's Monthly* in 1876, which declared Hartford as "the richest city in the United States," relative to its population. Digitized by Google Books.
 
 <!-- set iframe height to 660px and width to 700px in custom-scripts.html -->
-```{r 1876-scribners-monthly, echo=FALSE, fig.cap="(ref:1876-scribners-monthly)"}
+```{r 1876-scribners-monthly, fig.cap="(ref:1876-scribners-monthly)"}
 if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html") else knitr::include_graphics("images/1876-scribners-monthly.png")
 ```
 
