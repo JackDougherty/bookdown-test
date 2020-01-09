@@ -1,0 +1,24 @@
+## Cross-references test {-}
+
+Here's the first problematic case...
+
+<!-- TODO - fix LaTeX warning for undefined reference below -->
+Text to come on the continual redrawing of town boundaries in Hartford region thru 1880s, as shown in Image \@ref(fig:1600s-otl-town-borders).^[@ilyankouMapTownBorders2017]
+
+(ref:1600s-otl-town-borders) Scroll the narrative (or click and use arrow keys) in this [interactive map](https://ontheline.github.io/otl-town-borders/index-frame.html) of town borders in Hartford County, Connecticut. From the early 1600s to the late 1880s, local and state government divided the region into 29 separate towns as the European settler population grew. Boundaries shown here are not exact, but approximated from the best available digital sources: [UConn Libraries MAGIC historical maps](http://magic.lib.uconn.edu), [Atlas of Historical County Boundaries at Newberry Library](http://publications.newberry.org/ahcbp/pages/Connecticut.html), and the [Connecticut State Register and Manual](http://www.ct.gov/sots/cwp/view.asp?a=3188&q=392440). View [historical sources, known issues, and the code](https://github.com/ontheline/otl-town-borders/) for this map, developed by Ilya Ilyankou and Jack Dougherty.
+
+<!-- set iframe height to 600px in custom-scripts.html -->
+```{r 1600s-otl-town-borders, fig.cap="(ref:1600s-otl-town-borders)"}
+if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-town-borders/") else knitr::include_graphics("images/1600s-otl-town-borders.jpg")
+```
+
+Here's the second problematic case...
+
+<!-- TODO - fix LaTeX warning for undefined reference below -->
+In 1943, a dispute arose in West Hartford over the Oakwood Acres public housing development, shown in Image \@ref(fig:1954-02-17-ht-oakwood-acres).^[@hartfordtimesOakwoodAcresTemporary1954] Federal housing officials and West Hartford leaders clashed on whether or not African Americans should be allowed to live in this World War II public housing development, located in a virtually all-white town. During this period, public housing tracts were created to shelter the many war workers and their families drawn to the Hartford area by the availability of defense-related jobs. The United States government funded these developments; therefore, local housing officials needed to abide by federal laws regarding occupancy. Federal Housing authorities eventually did require West Hartford to admit African Americans; however, town residents and leaders prevailed by specifying residency criteria in such a way as to maintain the racial homogeneity of their community. Racist actions such as these, even when they occurred decades ago, have been factors in shaping the present-day demographics of West Hartford and other towns in the state.
+
+(ref:1954-02-17-ht-oakwood-acres) Photo of Oakwood Acres public housing in West Hartford, from the *Hartford Times*, February 17, 1954, digitized by the Hartford History Center, Hartford Public Library.
+
+```{r 1954-02-17-ht-oakwood-acres, fig.cap="(ref:1954-02-17-ht-oakwood-acres)"}
+ knitr::include_graphics("images/1954-02-17-ht-oakwood-acres.jpg")
+```

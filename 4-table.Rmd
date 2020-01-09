@@ -1,70 +1,96 @@
 # Table test {#table}
 
-## Authors and Contributors {-}
-<!-- TODO: try auto_pdf? maybe in table again? Best display method so far is uniform 150x150 300dpi JPG (not PNG) images, not in table -->
+**Table TBA: Title Here (and insert blank line before table begins)**
+
+| Much Much Longer Header | Short Header | Short Header |
+|:---------|:---|:---|
+| Use left-colons to left-justify text content | Less  | Here |
+| Use more hyphens to grant more space to some columns | Less | Here |
 
 
-|                           | Authors and Contributors   |
-|---------------------------|----------------------------|
-| Security Grade            | Second                     |
-| Location                  | Hartford                   |
-| Trend Next Decade         | Stable                     |
+**Table TBA: Title Here (and insert blank line before table begins)**
 
+| Header1 | Header2 | Header3 |
+|-----:|-----:|-----:|
+| 123 | 456 | 789 |
+| Use right-colons | to right-justify  | numerical content |
+| Use equal hyphens | to grant similar space | to all columns |
 
+Summary of image and table approaches <https://stackoverflow.com/questions/58204272/r-markdown-how-to-create-a-table-with-images-and-text-which-should-be-knitted-a>
 
+testing kable here with built-in database
 
-```{r dougherty-jack}
- knitr::include_graphics("images/dougherty-jack.jpg")
-```
-Jack Dougherty, the lead author of *On The Line*, is Professor of Educational Studies and Director of the Center for Hartford Engagement and Research (CHER) at Trinity College. He collaborates with students, colleagues, and community partners to explore cities, suburbs, and schools in metropolitan Hartford, Connecticut, using data visualization, digital history, and web writing tools. Contact him on his [faculty profile page](http://internet2.trincoll.edu/facprofiles/Default.aspx?fid=1004266), or follow him [on Twitter](http://twitter.com/doughertyjack) or on his blog <http://jackdougherty.org>.
-
-#### Co-Authors {-}
-<!-- TODO: add text about the number of Trinity College undergraduates who co-authored papers or co-presented works -->
-
-```{r agosto-jasmin}
- knitr::include_graphics("images/agosto-jasmin.jpg")
-```
-
-Jasmin Agosto (Trinity College Class of 2010 with bachelor's degree in American Studies and Educational Studies) co-authored [Mobilizing Against Racial Steering and Redlining](mobilizing.html), and also researched 18th-19th century school documents, and decades of school residency cases. Photo by Seth Markle.
-
-```{r ilyankou-ilya}
- knitr::include_graphics("images/ilyankou-ilya.jpg")
+```{r table1, message=FALSE, warning=FALSE}
+knitr::kable(head(mtcars[, 1:4]), caption = "Title enables auto-numbering and cross-refs", "pandoc")
 ```
 
-Ilya Ilyankou (Trinity College Class of 2018 with bachelor's degree in Computer Science and Studio Arts) developed several interactive maps in this book. His open-source code and map links are available at our GitHub public repository: <http://github.com/OnTheLine/>.
+Testing kable with manual input data via tibble data frame. See <https://r4ds.had.co.nz/tibbles.html>
 
-```{r iorio-vianna}
- knitr::include_graphics("images/iorio-vianna.jpg")
+```{r table2, message=FALSE, warning=FALSE}
+table2 <- tibble::tribble(
+        ~Images, ~Authors,
+        1, "Alpha",
+        2, "Beta"
+)
+knitr::kable(table2, caption = "Title enables auto-numbering and cross-refs", "pandoc")
 ```
 
-Vianna Iorio (Trinity College Class of 2019 with double major in Educational Studies and English) co-authored [Restricting with Property Covenants](restricting.html), [Mobilizing Against Racial Steering and Redlining](mobilizing.html), [Jumping the School District Line](jumping.html), and more chapters to come.
+Testing kable with tibble data frame text and images
 
-```{r levasseur-katie}
- knitr::include_graphics("images/levasseur-katie.jpg")
+```{r table3, message=FALSE, warning=FALSE}
+table3 <- tibble::tribble(
+        ~Images, ~Authors,
+        'images/dougherty-jack.jpg', "Alpha",
+        2, "Beta",
+        3, "Omega"
+)
+knitr::kable(table3, caption = "Title enables auto-numbering and cross-refs", "pandoc")
 ```
 
-Katie Campbell Levasseur (Trinity College Class of 2011 with bachelor's degree in Educational Studies and Mathematics) conducted restrictive covenant property records research and co-authored [How We Found Restrictive Covenants](covenants.html).
+Testing new Kable approach <https://stackoverflow.com/questions/58204272/r-markdown-how-to-create-a-table-with-images-and-text-which-should-be-knitted-a>
 
-```{r lee-jiyun}
- knitr::include_graphics("images/lee-jiyun.jpg")
+
+Testing Kable version
+```{r table-images, echo=FALSE, out.width='90%', fig.align = "center", results='asis'}
+
+dat <- data.frame(
+  Image = c(
+    paste0("![](images/dougherty-jack.jpg)"),
+    paste0("![](images/simpson-candace.jpg)")
+  ),
+  Description = c(
+  "text about Jack that goes on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on. ",
+  "Text about Candace that goes on and on and on, but shorter than above."
+  )
+)
+library(knitr)
+kable(dat, format = 'pandoc')
 ```
 
-JiYun (Lisa) Lee (Trinity College Class of 2017 with bachelor's degree in Educational Studies and Psychology) co-authored [Jumping the School District Line](jumping.html).
-
-```{r mcgann-shaun}
- knitr::include_graphics("images/mcgann-shaun.jpg")
+Backup version
+```{r foo, echo=FALSE, out.width='90%', fig.align = "center", fig.cap='(ref:foo-caption)', results='asis'}
+library(stringi)
+some_text <- stri_rand_lipsum(1)
+some_text <- paste("**Image description**", some_text)
+dat <- data.frame(
+  Image = c(
+    paste0("![](images/dougherty-jack.jpg)"),
+    paste0("![](images/simpson-candace.jpg)")
+  ),
+  Description = c(
+  some_text, # TEXT IMAGE 1
+  some_text  # TEXT IMAGE 2
+  )
+)
+library(knitr)
+kable(dat, format = 'pandoc')
 ```
 
-Shaun McGann (Trinity Colege Class of 2014 with bachelor's degree in Political Science and Urban Studies) co-authored [Federal Lending and Redlining](lending.html).
+Comparison with Markdown table 
+Markdown formatting: use colon to left-justify, and hyphens to set relative width (2 vs 10)
 
-```{r simpson-candace}
- knitr::include_graphics("images/simpson-candace.jpg")
-```
+|  | Authors and Contributors |
+| :-- | :---------- |
+| ![Jack Dougherty](images/dougherty-jack.jpg) | Jack Dougherty, the lead author of *On The Line*, is Professor of Educational Studies and Director of the Center for Hartford Engagement and Research (CHER) at Trinity College. He collaborates with students, colleagues, and community partners to explore cities, suburbs, and schools in metropolitan Hartford, Connecticut, using data visualization, digital history, and web writing tools. Contact him on his [faculty profile page](http://internet2.trincoll.edu/facprofiles/Default.aspx?fid=1004266), or follow him [on Twitter](http://twitter.com/doughertyjack) or on his blog <http://jackdougherty.org>. |
+![Candace Simpson](images/simpson-candace.jpg) | Candace Simpson (Trinity College Class of 2012 with bachelor's degree in Educational Studies) co-authored [Who Owns Oral History? A Creative Commons Solution](who-owns-oral-history.html) and conducted oral history interviews on restrictive property covenants and Sheff v. O'Neill.|   
 
-Candace Simpson (Trinity College Class of 2012 with bachelor's degree in Educational Studies) co-authored [Who Owns Oral History? A Creative Commons Solution](teaching-researching.html#who-owns-oral-history-a-creative-commons-solution) and conducted oral history interviews on restrictive property covenants and Sheff v. O'Neill.
-
-```{r wilson-tracey}
- knitr::include_graphics("images/wilson-tracey.jpg")
-```
-
-Tracey M. Wilson (Trinity College Class of 1976) co-authored [Restricting with Property Covenants](separating.html#restricting-with-property-covenants). See related chapters in her 2018 open-access book, *Life in West Hartford*,(http://lifeinwesthartford.org).

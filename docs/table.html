@@ -25,7 +25,7 @@
 <meta name="author" content="and contributors" />
 
 
-<meta name="date" content="2020-01-06" />
+<meta name="date" content="2020-01-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
   
 <link rel="prev" href="Image.html"/>
-<link rel="next" href="authors-and-contributors-1.html"/>
+<link rel="next" href="cross-references-test.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <script src="libs/elevate-section-attrs-2.0/elevate-section-attrs.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -92,7 +92,7 @@ $(document).ready(function() {
 <li class="chapter" data-level="3" data-path="Image.html"><a href="Image.html"><i class="fa fa-check"></i><b>3</b> PDF image testing</a></li>
 <li class="chapter" data-level="4" data-path="table.html"><a href="table.html"><i class="fa fa-check"></i><b>4</b> Table test</a>
 <ul>
-<li class="chapter" data-level="" data-path="authors-and-contributors-1.html"><a href="authors-and-contributors-1.html"><i class="fa fa-check"></i>Authors and Contributors</a></li>
+<li class="chapter" data-level="" data-path="cross-references-test.html"><a href="cross-references-test.html"><i class="fa fa-check"></i>Cross-references test</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>5</b> Bibliography</a></li>
 <li class="divider"></li>
@@ -116,7 +116,222 @@ $(document).ready(function() {
 
             <section class="normal" id="section-">
 <div id="table" class="section level1" number="4">
-<h1 number="4"><span class="header-section-number">4</span> Table test</h1> 
+<h1 number="4"><span class="header-section-number">4</span> Table test</h1>
+<p><strong>Table TBA: Title Here (and insert blank line before table begins)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Much Much Longer Header</th>
+<th align="left">Short Header</th>
+<th align="left">Short Header</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Use left-colons to left-justify text content</td>
+<td align="left">Less</td>
+<td align="left">Here</td>
+</tr>
+<tr class="even">
+<td align="left">Use more hyphens to grant more space to some columns</td>
+<td align="left">Less</td>
+<td align="left">Here</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table TBA: Title Here (and insert blank line before table begins)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Header1</th>
+<th align="right">Header2</th>
+<th align="right">Header3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">123</td>
+<td align="right">456</td>
+<td align="right">789</td>
+</tr>
+<tr class="even">
+<td align="right">Use right-colons</td>
+<td align="right">to right-justify</td>
+<td align="right">numerical content</td>
+</tr>
+<tr class="odd">
+<td align="right">Use equal hyphens</td>
+<td align="right">to grant similar space</td>
+<td align="right">to all columns</td>
+</tr>
+</tbody>
+</table>
+<p>Summary of image and table approaches <a href="https://stackoverflow.com/questions/58204272/r-markdown-how-to-create-a-table-with-images-and-text-which-should-be-knitted-a" class="uri">https://stackoverflow.com/questions/58204272/r-markdown-how-to-create-a-table-with-images-and-text-which-should-be-knitted-a</a></p>
+<p>testing kable here with built-in database</p>
+<table>
+<caption><span id="tab:table1">Table 1: </span>Title enables auto-numbering and cross-refs</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+</tr>
+<tr class="even">
+<td>Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160</td>
+<td align="right">110</td>
+</tr>
+<tr class="odd">
+<td>Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108</td>
+<td align="right">93</td>
+</tr>
+<tr class="even">
+<td>Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258</td>
+<td align="right">110</td>
+</tr>
+<tr class="odd">
+<td>Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360</td>
+<td align="right">175</td>
+</tr>
+<tr class="even">
+<td>Valiant</td>
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225</td>
+<td align="right">105</td>
+</tr>
+</tbody>
+</table>
+<p>Testing kable with manual input data via tibble data frame. See <a href="https://r4ds.had.co.nz/tibbles.html" class="uri">https://r4ds.had.co.nz/tibbles.html</a></p>
+<table>
+<caption><span id="tab:table2">Table 2: </span>Title enables auto-numbering and cross-refs</caption>
+<thead>
+<tr class="header">
+<th align="right">Images</th>
+<th align="left">Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">Alpha</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">Beta</td>
+</tr>
+</tbody>
+</table>
+<p>Testing kable with tibble data frame text and images</p>
+<table>
+<caption><span id="tab:table3">Table 3: </span>Title enables auto-numbering and cross-refs</caption>
+<thead>
+<tr class="header">
+<th align="left">Images</th>
+<th align="left">Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">images/dougherty-jack.jpg</td>
+<td align="left">Alpha</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">Beta</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">Omega</td>
+</tr>
+</tbody>
+</table>
+<p>Testing new Kable approach <a href="https://stackoverflow.com/questions/58204272/r-markdown-how-to-create-a-table-with-images-and-text-which-should-be-knitted-a" class="uri">https://stackoverflow.com/questions/58204272/r-markdown-how-to-create-a-table-with-images-and-text-which-should-be-knitted-a</a></p>
+<p>Testing Kable version</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Image</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><img src="images/dougherty-jack.jpg" /></td>
+<td align="left">text about Jack that goes on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on, with several repeating clauses, and goes on and on and on and on.</td>
+</tr>
+<tr class="even">
+<td align="left"><img src="images/simpson-candace.jpg" /></td>
+<td align="left">Text about Candace that goes on and on and on, but shorter than above.</td>
+</tr>
+</tbody>
+</table>
+<p>Backup version</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Image</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><img src="images/dougherty-jack.jpg" /></td>
+<td align="left"><strong>Image description</strong> Lorem ipsum dolor sit amet, habitasse hendrerit sapien inceptos ut ipsum amet elit. Iaculis, dis fames ut, vulputate volutpat fusce. Curae tortor ligula orci erat sed luctus elit, ligula eu consectetur sollicitudin et. Aenean, bibendum nisi finibus volutpat quisque purus. Vulputate accumsan sed sed primis felis non condimentum, blandit adipiscing gravida. Non sit a, justo lectus ridiculus id ante. Feugiat sed, laoreet velit curae ut ut vitae in in fames. Ut ac nisl vehicula leo et in, tincidunt ligula aptent. Faucibus est. Arcu, amet ante convallis auctor in, ac non pharetra. Mauris taciti, et nibh tristique nulla nulla aliquam vel, auctor. Quam nec nisl feugiat sit sodales blandit hendrerit. Nec magna lacus eget, lectus sed interdum tincidunt. Nostra ante orci lorem ex ullamcorper class nisl! Vel sit, in sed non quam a facilisi sodales pellentesque class taciti, sed! Metus erat aliquet nunc curae lacus, erat.</td>
+</tr>
+<tr class="even">
+<td align="left"><img src="images/simpson-candace.jpg" /></td>
+<td align="left"><strong>Image description</strong> Lorem ipsum dolor sit amet, habitasse hendrerit sapien inceptos ut ipsum amet elit. Iaculis, dis fames ut, vulputate volutpat fusce. Curae tortor ligula orci erat sed luctus elit, ligula eu consectetur sollicitudin et. Aenean, bibendum nisi finibus volutpat quisque purus. Vulputate accumsan sed sed primis felis non condimentum, blandit adipiscing gravida. Non sit a, justo lectus ridiculus id ante. Feugiat sed, laoreet velit curae ut ut vitae in in fames. Ut ac nisl vehicula leo et in, tincidunt ligula aptent. Faucibus est. Arcu, amet ante convallis auctor in, ac non pharetra. Mauris taciti, et nibh tristique nulla nulla aliquam vel, auctor. Quam nec nisl feugiat sit sodales blandit hendrerit. Nec magna lacus eget, lectus sed interdum tincidunt. Nostra ante orci lorem ex ullamcorper class nisl! Vel sit, in sed non quam a facilisi sodales pellentesque class taciti, sed! Metus erat aliquet nunc curae lacus, erat.</td>
+</tr>
+</tbody>
+</table>
+<p>Comparison with Markdown table
+Markdown formatting: use colon to left-justify, and hyphens to set relative width (2 vs 10)</p>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="78%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Authors and Contributors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><img src="images/dougherty-jack.jpg" alt="Jack Dougherty" /></td>
+<td align="left">Jack Dougherty, the lead author of <em>On The Line</em>, is Professor of Educational Studies and Director of the Center for Hartford Engagement and Research (CHER) at Trinity College. He collaborates with students, colleagues, and community partners to explore cities, suburbs, and schools in metropolitan Hartford, Connecticut, using data visualization, digital history, and web writing tools. Contact him on his <a href="http://internet2.trincoll.edu/facprofiles/Default.aspx?fid=1004266">faculty profile page</a>, or follow him <a href="http://twitter.com/doughertyjack">on Twitter</a> or on his blog <a href="http://jackdougherty.org" class="uri">http://jackdougherty.org</a>.</td>
+</tr>
+<tr class="even">
+<td align="left"><img src="images/simpson-candace.jpg" alt="Candace Simpson" /></td>
+<td align="left">Candace Simpson (Trinity College Class of 2012 with bachelor’s degree in Educational Studies) co-authored <a href="who-owns-oral-history.html">Who Owns Oral History? A Creative Commons Solution</a> and conducted oral history interviews on restrictive property covenants and Sheff v. O’Neill.</td>
+</tr>
+</tbody>
+</table>
+<!--chapter:end:4-table.Rmd--> 
 </div>
             </section>
 
@@ -124,7 +339,7 @@ $(document).ready(function() {
         </div>
       </div>
 <a href="Image.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="authors-and-contributors-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cross-references-test.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -155,7 +370,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jackdougherty/bookdown-test/edit/master/4-table.Rmd",
+"link": "https://github.com/jackdougherty/bookdown-test/edit/master/5-cross-refs.Rmd",
 "text": "Edit on GitHub"
 },
 "history": {
@@ -163,7 +378,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/jackdougherty/bookdown-test/edit/master/4-table.Rmd",
+"link": "https://github.com/jackdougherty/bookdown-test/edit/master/5-cross-refs.Rmd",
 "text": null
 },
 "download": ["bookdown-test.pdf", "bookdown-test.epub", "bookdown-test.mobi", "bookdown-test.docx"],
