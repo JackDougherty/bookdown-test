@@ -10,7 +10,7 @@ site: bookdown::bookdown_site
 documentclass: book
 bibliography: book.bib
 citation-style: chicago-fullnote-bibliography.csl
-link-citations: true
+link-citations: yes
 
 url: 'http\://jackdougherty.github.io/bookdown-test'
 github-repo: jackdougherty/bookdown-test
@@ -34,9 +34,7 @@ output:
         after: |
             <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
       download: [pdf, epub, mobi, docx]
-      edit:
-        link: https://github.com/jackdougherty/bookdown-test/edit/master/%s
-        text: "Edit on GitHub"
+      view: https://github.com/jackdougherty/bookdown-test/edit/master/%s
       search: yes
       sharing:
         facebook: yes

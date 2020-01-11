@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Cross-references test | Bookdown test</title>
-  <meta name="description" content="Cross-references test | Bookdown test" />
+  <title>4.1 Cross-references test | Bookdown test</title>
+  <meta name="description" content="4.1 Cross-references test | Bookdown test" />
   <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Cross-references test | Bookdown test" />
+  <meta property="og:title" content="4.1 Cross-references test | Bookdown test" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="http://jackdougherty.github.io/bookdown-test" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="jackdougherty/bookdown-test" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Cross-references test | Bookdown test" />
+  <meta name="twitter:title" content="4.1 Cross-references test | Bookdown test" />
   <meta name="twitter:site" content="@doughertyjack" />
   
   
@@ -25,7 +25,7 @@
 <meta name="author" content="and contributors" />
 
 
-<meta name="date" content="2020-01-11" />
+<meta name="date" content="2020-01-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -92,7 +92,7 @@ $(document).ready(function() {
 <li class="chapter" data-level="3" data-path="Image.html"><a href="Image.html"><i class="fa fa-check"></i><b>3</b> PDF image testing</a></li>
 <li class="chapter" data-level="4" data-path="table.html"><a href="table.html"><i class="fa fa-check"></i><b>4</b> Table test</a>
 <ul>
-<li class="chapter" data-level="" data-path="cross-references-test.html"><a href="cross-references-test.html"><i class="fa fa-check"></i>Cross-references test</a></li>
+<li class="chapter" data-level="4.1" data-path="cross-ref.html"><a href="cross-ref.html"><i class="fa fa-check"></i><b>4.1</b> Cross-references test</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>5</b> Bibliography</a></li>
 <li class="divider"></li>
@@ -115,12 +115,41 @@ $(document).ready(function() {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="cross-references-test" class="section level2 unnumbered" number="">
-<h2 class="unnumbered" number="">Cross-references test</h2>
-<p>removed</p>
+<div id="cross-ref" class="section level2" number="4.1">
+<h2 number="4.1"><span class="header-section-number">4.1</span> Cross-references test</h2>
+<p>Here’s a cross-reference to @ref(#table) in this book.</p>
+<p>Here’s the first problematic case…</p>
+<!-- TODO - fix LaTeX warning for undefined reference below -->
+<p>Text to come on the continual redrawing of town boundaries in Hartford region thru 1880s, as shown in Image <a href="cross-ref.html#fig:1600s-otl-town-borders">9</a>.<a href="#fn20" class="footnote-ref" id="fnref20"><sup>20</sup></a></p>
+
+<!-- set iframe height to 600px in custom-scripts.html -->
+<div class="figure"><span id="fig:1600s-otl-town-borders"></span>
+<iframe src="https://ontheline.github.io/otl-town-borders/" width="672" height="400px">
+</iframe>
+<p class="caption">
+Image 9: Scroll the narrative (or click and use arrow keys) in this <a href="https://ontheline.github.io/otl-town-borders/index-frame.html">interactive map</a> of town borders in Hartford County, Connecticut. From the early 1600s to the late 1880s, local and state government divided the region into 29 separate towns as the European settler population grew. Boundaries shown here are not exact, but approximated from the best available digital sources: <a href="http://magic.lib.uconn.edu">UConn Libraries MAGIC historical maps</a>, <a href="http://publications.newberry.org/ahcbp/pages/Connecticut.html">Atlas of Historical County Boundaries at Newberry Library</a>, and the <a href="http://www.ct.gov/sots/cwp/view.asp?a=3188&amp;q=392440">Connecticut State Register and Manual</a>. View <a href="https://github.com/ontheline/otl-town-borders/">historical sources, known issues, and the code</a> for this map, developed by Ilya Ilyankou and Jack Dougherty.
+</p>
+</div>
+<p>Here’s the second problematic case…</p>
+<!-- TODO - fix LaTeX warning for undefined reference below -->
+<p>In 1943, a dispute arose in West Hartford over the Oakwood Acres public housing development, shown in Image <a href="cross-ref.html#fig:1954-02-17-ht-oakwood-acres">10</a>.<a href="#fn21" class="footnote-ref" id="fnref21"><sup>21</sup></a> Federal housing officials and West Hartford leaders clashed on whether or not African Americans should be allowed to live in this World War II public housing development, located in a virtually all-white town. During this period, public housing tracts were created to shelter the many war workers and their families drawn to the Hartford area by the availability of defense-related jobs. The United States government funded these developments; therefore, local housing officials needed to abide by federal laws regarding occupancy. Federal Housing authorities eventually did require West Hartford to admit African Americans; however, town residents and leaders prevailed by specifying residency criteria in such a way as to maintain the racial homogeneity of their community. Racist actions such as these, even when they occurred decades ago, have been factors in shaping the present-day demographics of West Hartford and other towns in the state.</p>
+
+<div class="figure"><span id="fig:1954-02-17-ht-oakwood-acres"></span>
+<img src="images/1954-02-17-ht-oakwood-acres.jpg" alt="Photo of Oakwood Acres public housing in West Hartford, from the Hartford Times, February 17, 1954, digitized by the Hartford History Center, Hartford Public Library."  />
+<p class="caption">
+Image 10: Photo of Oakwood Acres public housing in West Hartford, from the <em>Hartford Times</em>, February 17, 1954, digitized by the Hartford History Center, Hartford Public Library.
+</p>
+</div>
 
 </div>
 <!-- </div> -->
+<div class="footnotes">
+<hr />
+<ol start="20">
+<li id="fn20"><p><span class="citation">Ilya Ilyankou and Jack Dougherty, “Map: Town Borders in Hartford County, CT from 1600s to Present,” On The Line, 2017, <a href="https://github.com/OnTheLine/otl-town-borders" role="doc-biblioref">https://github.com/OnTheLine/otl-town-borders</a></span><a href="cross-ref.html#fnref20" class="footnote-back">↩︎</a></p></li>
+<li id="fn21"><p><span class="citation">Hartford Times, “Oakwood Acres Temporary Housing, West Hartford” (Photograph, Hartford History Center, Hartford Public Library, February 17, 1954), <a href="https://www.flickr.com/photos/cthistoryonline/5717411442/in/set-72157626521582021" role="doc-biblioref">https://www.flickr.com/photos/cthistoryonline/5717411442/in/set-72157626521582021</a></span><a href="cross-ref.html#fnref21" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>

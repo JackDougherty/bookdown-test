@@ -1,9 +1,6 @@
 output_dir: "docs"
 book_filename: "bookdown-test"
-view: https://github.com/jackdougherty/bookdown-test/edit/master/%s
 language:
   label:
     fig: "Image "
-ui:
-    edit: "Edit"
 chapter_name: "Chapter "
