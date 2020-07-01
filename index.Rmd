@@ -19,8 +19,7 @@ output:
   bookdown::gitbook:
     dev: svglite
     css: css/style.css
-    includes:
-      in_header: custom-scripts.html
+    toc_depth: 2
     split_by: section
     number_sections: true
     split_bib: true
@@ -33,7 +32,7 @@ output:
             <li><strong><a href="./">Bookdown test</a></strong></li>
         after: |
             <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
-      download: [pdf, epub, mobi, docx]
+      download: [pdf]
       view: https://github.com/jackdougherty/bookdown-test/edit/master/%s
       search: yes
       sharing:
@@ -42,10 +41,15 @@ output:
         twitter: yes
 
   bookdown::pdf_book:
-    citation_package: none
+    toc_depth: 2
+    number_sections: true
+    citation_package: default
     pandoc_args: [ "--csl", "chicago-fullnote-bibliography.csl" ]
 
   bookdown::word_document2:
+    default
+
+  bookdown::markdown_document2:
     default
 ---
 # Preface {-}

@@ -6,9 +6,8 @@ In addition its financial assets, Clark also praised Hartford's abundant cultura
 
 (ref:1876-scribners-monthly) Scroll [the full-screen document](https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html) from *Scribner's Monthly* in 1876, which declared Hartford as "the richest city in the United States," relative to its population. Digitized by Google Books.
 
-<!-- set iframe height to 660px and width to 700px in custom-scripts.html -->
 ```{r 1876-scribners-monthly, fig.cap="(ref:1876-scribners-monthly)"}
-if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html") else knitr::include_graphics("images/1876-scribners-monthly.png")
+if(knitr::is_html_output()) knitr::include_url("https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html", height="600px") else knitr::include_graphics("images/1876-scribners-monthly.png")
 ```
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[@tegelerFindingCommonGround2011]
@@ -24,6 +23,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..[@doughertySheffNeillWeak2009]
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[@doughertyBridgingGapUrban2007]
+
+### Third-level header non-numbered {-}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 #### Fourth-level header non-numbered {-}
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[@doughertySchoolChoiceSuburbia2009]
