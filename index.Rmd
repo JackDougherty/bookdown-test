@@ -60,4 +60,4 @@ knitr::opts_chunk$set(echo = FALSE)
 options(knitr.graphics.auto_pdf = TRUE)
 ```
 
-This is a test book, again
+This is a test book, again... 

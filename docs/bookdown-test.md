@@ -3,7 +3,7 @@ Preface
 
 <!-- R global options: each R chunk image to display without code (no echo); display PDF version over JPG/PNG when available -->
 
-This is a test book, again
+This is a test book, again…
 
 <!--chapter:end:index.Rmd-->
 
