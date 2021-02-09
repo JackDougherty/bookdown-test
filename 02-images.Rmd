@@ -4,16 +4,7 @@ Note that auto_pdf is true in global options
 
 ## Image table {- #image-table}
 
-Method 1: create uniform 150x150 at 300dpi JPG (not PNG) images; use colon to left-justify, and hyphens to set relative width (2 vs. 10)
-
-|  | Group 1 |
-| :-- | :---------- |
-| ![Jack Dougherty](images/preface/dougherty-jack-150.jpg) | Cupcake ipsum dolor sit amet danish. Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy canes wafer tart I love chocolate bar. Toffee candy canes croissant lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate bar cake oat cake lemon drops jelly-o.|
-|  | Group 2 |
-| ![Jasmin Agosto](images/preface/agosto-jasmin-150.jpg) | Cupcake ipsum dolor sit amet danish. Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy canes wafer tart I love chocolate bar. Toffee candy canes croissant lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate bar cake oat cake lemon drops jelly-o. |
-| ![Ilya Ilyankou](images/preface/ilyankou-ilya-150.jpg) | Cupcake ipsum dolor sit amet danish. Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy canes wafer tart I love chocolate bar. Toffee candy canes croissant lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate bar cake oat cake lemon drops jelly-o. |
-
-Method 2: start with large originals when possible, create uniform 150x150 at 300dpi PNG (not JPG) images, and the rest is the same as above
+Best method: create uniform 150x150 at 300dpi PNG (not JPG) images; use colon to left-justify, and hyphens to set relative width (2 vs. 10)
 
 |  | Group 1 |
 | :-- | :---------- |

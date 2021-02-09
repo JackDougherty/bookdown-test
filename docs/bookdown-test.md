@@ -1,5 +1,4 @@
-Preface
-=======
+# Preface
 
 <!-- R global options: each R chunk image to display without code (no echo); display PDF version over JPG/PNG when available -->
 
@@ -7,8 +6,7 @@ This is a test book, again…
 
 <!--chapter:end:index.Rmd-->
 
-1 Notes chapter test
-====================
+# 1 Notes chapter test
 
 Testing dynamic reference with footnote
 
@@ -32,7 +30,7 @@ the suburbs.
 <iframe src="https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html" width="100%" height="600px">
 </iframe>
 <p class="caption">
-Image 1.1: Scroll [the full-screen
+Figure 1.1: Scroll [the full-screen
 document](https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html)
 from *Scribner’s Monthly* in 1876, which declared Hartford as “the
 richest city in the United States,” relative to its population.
@@ -139,8 +137,7 @@ mollit anim id est laborum.[11]
 
 <!--chapter:end:01-notes-chapter.Rmd-->
 
-1.1 Notes subchapter test
--------------------------
+## 1.1 Notes subchapter test
 
 Minor revision More text here More text here More text here More text
 here More text here More text here More text here More text here More
@@ -180,51 +177,14 @@ more text here
 
 <!--chapter:end:01.1-notes-subchapter.Rmd-->
 
-2 Image testing
-===============
+# 2 Image testing
 
 Note that auto\_pdf is true in global options
 
-Image table
------------
+## Image table
 
-Method 1: create uniform 150x150 at 300dpi JPG (not PNG) images; use
+Best method: create uniform 150x150 at 300dpi PNG (not JPG) images; use
 colon to left-justify, and hyphens to set relative width (2 vs. 10)
-
-<table>
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 78%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Group 1</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><img src="images/preface/dougherty-jack-150.jpg" alt="Jack Dougherty" /></td>
-<td style="text-align: left;">Cupcake ipsum dolor sit amet danish. Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy canes wafer tart I love chocolate bar. Toffee candy canes croissant lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate bar cake oat cake lemon drops jelly-o.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Group 2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><img src="images/preface/agosto-jasmin-150.jpg" alt="Jasmin Agosto" /></td>
-<td style="text-align: left;">Cupcake ipsum dolor sit amet danish. Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy canes wafer tart I love chocolate bar. Toffee candy canes croissant lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate bar cake oat cake lemon drops jelly-o.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><img src="images/preface/ilyankou-ilya-150.jpg" alt="Ilya Ilyankou" /></td>
-<td style="text-align: left;">Cupcake ipsum dolor sit amet danish. Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy canes wafer tart I love chocolate bar. Toffee candy canes croissant lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate bar cake oat cake lemon drops jelly-o.</td>
-</tr>
-</tbody>
-</table>
-
-Method 2: start with large originals when possible, create uniform
-150x150 at 300dpi PNG (not JPG) images, and the rest is the same as
-above
 
 <table>
 <colgroup>
@@ -269,7 +229,7 @@ mollit anim id est laborum.
 
 <img src="images/1937-holc-hartford-map.png" alt="Use large original PNG sample static image, use out.width to reduce for web edition. Create smaller auto_pdf for PDF edition. Option to add *Markdown* formatting, [links](http://google.com), but NO footnotes in captions due to PDF edition errors." width="500" />
 <p class="caption">
-Image 2.1: Use large original PNG sample static image, use out.width to
+Figure 2.1: Use large original PNG sample static image, use out.width to
 reduce for web edition. Create smaller auto\_pdf for PDF edition. Option
 to add *Markdown* formatting, [links](http://google.com), but NO
 footnotes in captions due to PDF edition errors.
@@ -279,7 +239,7 @@ footnotes in captions due to PDF edition errors.
 
 <img src="images/1954-oakwood-acres-download.png" alt="Original PNG sample static image, no reduction for web edition, but create smaller 400 wide 300dpi auto_pdf for PDF edition."  />
 <p class="caption">
-Image 2.2: Original PNG sample static image, no reduction for web
+Figure 2.2: Original PNG sample static image, no reduction for web
 edition, but create smaller 400 wide 300dpi auto\_pdf for PDF edition.
 </p>
 
@@ -287,8 +247,8 @@ edition, but create smaller 400 wide 300dpi auto\_pdf for PDF edition.
 
 <img src="images/1954-oakwood-acres-screenshot.png" alt="Original PNG sample from closeup screenshot, no reduction for web edition, but create smaller 400 wide 300dpi auto_pdf for PDF edition."  />
 <p class="caption">
-Image 2.3: Original PNG sample from closeup screenshot, no reduction for
-web edition, but create smaller 400 wide 300dpi auto\_pdf for PDF
+Figure 2.3: Original PNG sample from closeup screenshot, no reduction
+for web edition, but create smaller 400 wide 300dpi auto\_pdf for PDF
 edition.
 </p>
 
@@ -296,7 +256,7 @@ edition.
 
 <img src="images/1937-otl-redlining.png" alt="Caption for all versions here, with link to [full-screen interactive map with its own caption](https://ontheline.github.io/otl-redlining/index-caption.html), and link to sources and the code View [map historical sources, known issues, and the code](https://github.com/ontheline/otl-redlining/), developed by Ilya Ilyankou and Jack Dougherty."  />
 <p class="caption">
-Image 2.4: Caption for all versions here, with link to [full-screen
+Figure 2.4: Caption for all versions here, with link to [full-screen
 interactive map with its own
 caption](https://ontheline.github.io/otl-redlining/index-caption.html),
 and link to sources and the code View [map historical sources, known
@@ -306,8 +266,7 @@ developed by Ilya Ilyankou and Jack Dougherty.
 
 <!--chapter:end:02-images.Rmd-->
 
-3 Table test
-============
+# 3 Table test
 
 Add the Markdown table code shown below to auto-number (Table x) in
 HTML, PDF, Word.
@@ -337,6 +296,8 @@ HTML, PDF, Word.
 </tbody>
 </table>
 
+Table 3.1: Left-justify content, remember blank Line
+
 <table>
 <caption>Table 3.2: Right-justify content, remember blank line</caption>
 <thead>
@@ -365,13 +326,27 @@ HTML, PDF, Word.
 </tbody>
 </table>
 
+Table 3.2: Right-justify content, remember blank line
+
 <!--chapter:end:03-table.Rmd-->
 
-3.1 Cross-references test
--------------------------
+# 4 Cross-references test
 
-Method 1: Bookdown unique ID links to cross-ref chapters, sections,
-figures… do they still create extraneous and imprecise URLs?
+Best method: cross-refs to HTML
+
+jump to the [Notes chapter](notes.html)
+
+jump to the [Notes subchapter](subchapter.html)
+
+jump to Figure <a href="#fig:sample-static-png">2.1</a>.
+
+jump to Table <a href="#tab:left-table">3.1</a>.
+
+but you cannot jump to a non-header [Notes subchapter
+subsection](subsection.html)
+
+Avoid using Bookdown unique ID links to cross-ref chapters and sections,
+because they still create imprecise URLs with extraneous hashtags
 
 let’s jump to the [Notes chapter](#notes)
 
@@ -381,19 +356,9 @@ now let’s jump to the [Notes subchapter subsection](#subsection)
 
 now let’s jump to the [Sample interactive](#sample-interactive)
 
-Method 2: the HTML method
-
-jump to the [Notes chapter](notes.html)
-
-jump to the [Notes subchapter](subchapter.html)
-
-probably won’t work but jump to the [Notes subchapter
-subsection](subsection.html)
-
 <!--chapter:end:04-cross-refs.Rmd-->
 
-4 Video Tests
-=============
+# 5 Video Tests
 
 Problem: Video stream content from CT Digital Archives and Trinity
 Kaltura automatically runs in autoplay mode in web browsers, and I have
@@ -408,31 +373,31 @@ settings as developers.
 
 <img src="images/2013-cthistory-video-screenshot.png" alt="Here's a sample YouTube caption, with option to add Markdown links and footnote to full video at CTDA."  />
 <p class="caption">
-Image 4.1: Here’s a sample YouTube caption, with option to add Markdown
+Figure 5.1: Here’s a sample YouTube caption, with option to add Markdown
 links and footnote to full video at CTDA.
 </p>
 
 #### Works: Kaltura HTML5 embed avoids autoplay, but is it still supported?
 
-…as shown below in <a href="#fig:2011-sheff-elizabeth2">4.2</a>.[16].
+…as shown below in <a href="#fig:2011-sheff-elizabeth2">5.2</a>.[16].
 See additional oral histories with participants in the Sheff v O’Neill
 school desegregation lawsuit.[17]
 
 <img src="images/2011-sheff-elizabeth.jpg" alt="View the [oral history video interview and transcript](http://digitalrepository.trincoll.edu/cssp_ohistory/16) with Elizabeth Horton Sheff in 2011."  />
 <p class="caption">
-Image 4.2: View the [oral history video interview and
+Figure 5.2: View the [oral history video interview and
 transcript](http://digitalrepository.trincoll.edu/cssp_ohistory/16) with
 Elizabeth Horton Sheff in 2011.
 </p>
 
 #### Works but not properly formatted: Kaltura default embed code avoids autoplay
 
-…as shown below in <a href="#fig:2011-sheff-elizabeth3">4.3</a>.This is
+…as shown below in <a href="#fig:2011-sheff-elizabeth3">5.3</a>.This is
 actually Anne Goldstein.
 
 <img src="images/2011-sheff-elizabeth.jpg" alt="This is actually Anne Goldstein sample video."  />
 <p class="caption">
-Image 4.3: This is actually Anne Goldstein sample video.
+Figure 5.3: This is actually Anne Goldstein sample video.
 </p>
 
 #### Issue Background
@@ -440,18 +405,18 @@ Image 4.3: This is actually Anne Goldstein sample video.
 Here is an oral history video as displayed on the CTDA site, which does
 NOT autoplay:
 
-<a href="https://collections.ctdigitalarchive.org/islandora/object/120002:172" class="uri">https://collections.ctdigitalarchive.org/islandora/object/120002:172</a>
+<https://collections.ctdigitalarchive.org/islandora/object/120002:172>
 
 Here is the CTDA MP4 video stream for that object, which runs AUTOPLAY
 in Chrome and FFox for Mac (and perhaps other browsers). CTDA says there
 is no setting to turn off autoplay from datastreams
 
-<a href="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4" class="uri">https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4</a>
+<https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4>
 
 The stream above also works with this “view” ending, but also runs
 autoplay:
 
-<a href="https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view" class="uri">https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view</a>
+<https://collections.ctdigitalarchive.org/islandora/object/120002:172/datastream/MP4/view>
 
 #### Failed: CTDA iframe with autoplay=false
 
@@ -462,7 +427,7 @@ end of the src string, as suggested in Stackoverflow further below.
 
 <img src="images/2014-lumpkin-mae-willie-screenshot.png" alt="Here's a sample CTDA video caption, with option to add Markdown link and footnote."  />
 <p class="caption">
-Image 4.4: Here’s a sample CTDA video caption, with option to add
+Figure 5.4: Here’s a sample CTDA video caption, with option to add
 Markdown link and footnote.
 </p>
 
@@ -473,7 +438,7 @@ iframe through jQuery in the custom-script.html
 
 Here’s a solution using the [HTML5 video
 tag](https://www.w3schools.com/tags/tag_video.asp), which inserts user
-“controls” but omits “autoplay”.
+“controls” but omits “autoplay.”
 
 <video controls width="640" height="360">
 <source src="https://collections.ctdigitalarchive.org/islandora/object/120002:191/datastream/MP4" type="video/mp4">
@@ -497,7 +462,7 @@ Bookdown-generated books because:
 
 <img src="images/2011-bernstein-demo-screenshot.png" alt="Here's a sample local video clip caption, with option to add Markdown link and footnote."  />
 <p class="caption">
-Image 4.5: Here’s a sample local video clip caption, with option to add
+Figure 5.5: Here’s a sample local video clip caption, with option to add
 Markdown link and footnote.
 </p>
 
@@ -511,22 +476,21 @@ be displayed, and therefore not ideal, as described above.
 See Stackoverflow discussions about HTML iframe, HTML5 video, and
 autoplay:
 
-<a href="https://stackoverflow.com/questions/49256942/how-to-disable-autoplay-video-in-iframe" class="uri">https://stackoverflow.com/questions/49256942/how-to-disable-autoplay-video-in-iframe</a>
+<https://stackoverflow.com/questions/49256942/how-to-disable-autoplay-video-in-iframe>
 and
-<a href="https://stackoverflow.com/questions/31956221/how-to-disable-auto-play-for-local-video-in-iframe" class="uri">https://stackoverflow.com/questions/31956221/how-to-disable-auto-play-for-local-video-in-iframe</a>
+<https://stackoverflow.com/questions/31956221/how-to-disable-auto-play-for-local-video-in-iframe>
 
 See Google Chrome Developer autoplay policy change in April 2018:
 
-<a href="https://developers.google.com/web/updates/2017/09/autoplay-policy-changes" class="uri">https://developers.google.com/web/updates/2017/09/autoplay-policy-changes</a>
+<https://developers.google.com/web/updates/2017/09/autoplay-policy-changes>
 
 See Firefox Developer note for Video HTML5 autoplay:
 
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" class="uri">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video</a>
+<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video>
 
 <!--chapter:end:05-video.Rmd-->
 
-5 Bibliography
-==============
+# 6 Bibliography
 
 <!--chapter:end:9-bibliography.Rmd-->
 
@@ -564,7 +528,7 @@ Scores, Race, and Housing Markets.” *American Journal of Education* 115,
 no. 4 (August 2009): 523–48.
 <http://digitalrepository.trincoll.edu/cssp_papers/1>.
 
-Dougherty, Jack, Jesse Wanzer, and Christina Ramsay. “Sheff V. O’Neill:
+Dougherty, Jack, Jesse Wanzer, and Christina Ramsay. “Sheff v. O’Neill:
 Weak Desegregation Remedies and Strong Disincentives in Connecticut,
 1996-2008.” In *From the Courtroom to the Classroom: The Shifting
 Landscape of School Desegregation*, edited by Claire Smrekar and Ellen
@@ -600,79 +564,90 @@ Commission on the Zoning of West Hartford*. West Hartford, Conn: Zoning
 Commission, 1924.
 <http://magic.lib.uconn.edu/magic_2/raster/37840/hdimg_37840_155_1924_unkn_CSL_1_p.pdf>.
 
-[1] Charles H. Clark, “The Charter Oak City,” *Scribner’s Monthly* 13,
-no. 1 (November 1876): 1–21,
-<https://books.google.com/books?id=2q_PAAAAMAAJ&pg=PA1#v=onepage&q&f=false>
+[1] [Charles H. Clark](#ref-clarkCharterOakCity1876), [“The Charter Oak
+City,” *Scribner’s Monthly* 13, no. 1 (November 1876): 1–21,
+<https://books.google.com/books?id=2q_PAAAAMAAJ&pg=PA1#v=onepage&q&f=false>](#ref-clarkCharterOakCity1876).
 
-[2] Philip Tegeler, ed., *Finding Common Ground: Coordinating Housing
+[2] [Philip Tegeler, ed., *Finding Common Ground: Coordinating Housing
 and Education Policy to Promote Integration* (Washington, DC: Poverty &
 Race Research Action Council, 2011),
-<http://www.prrac.org/pdf/HousingEducationReport-October2011.pdf>.
+<http://www.prrac.org/pdf/HousingEducationReport-October2011.pdf>](#ref-tegelerFindingCommonGround2011).
 
-[3] Robert Harvey Whitten, *West Hartford Zoning: Report to the Zoning
+[3] [Robert Harvey Whitten, *West Hartford Zoning: Report to the Zoning
 Commission on the Zoning of West Hartford* (West Hartford, Conn: Zoning
 Commission, 1924),
-<http://magic.lib.uconn.edu/magic_2/raster/37840/hdimg_37840_155_1924_unkn_CSL_1_p.pdf>.
+<http://magic.lib.uconn.edu/magic_2/raster/37840/hdimg_37840_155_1924_unkn_CSL_1_p.pdf>](#ref-whittenWestHartfordZoning1924).
 
-[4] Lis Pennington, Emily Steele, and Jack Dougherty, “A Political
+[4] [Lis Pennington, Emily Steele, and Jack Dougherty, “A Political
 History of School Finance Reform in Metropolitan Hartford, Connecticut,
 1945-2005” (American Educational Research Association conference paper,
-April 2007), <http://digitalrepository.trincoll.edu/cssp_papers/29/>.
+April 2007),
+<http://digitalrepository.trincoll.edu/cssp_papers/29/>](#ref-penningtonPoliticalHistorySchool2007).
 
-[5] Jack Dougherty, “Review of ’Connecticut’s Public Schools: A History,
-1650-2000’ by Christopher Collier,” *Connecticut History* 50, no. 1
-(2011): 120–22, <http://digitalrepository.trincoll.edu/cssp_papers/41>.
+[5] [Jack Dougherty, “Review of ’Connecticut’s Public Schools: A
+History, 1650-2000’ by Christopher Collier,” *Connecticut History* 50,
+no. 1 (2011): 120–22,
+<http://digitalrepository.trincoll.edu/cssp_papers/41>](#ref-doughertyReviewConnecticutPublic2011).
 
-[6] Jack Dougherty, “Conflicting Questions: Why Historians and
+[6] [Jack Dougherty, “Conflicting Questions: Why Historians and
 Policymakers Miscommunicate on Urban Education,” in *Clio at the Table:
 Using History to Inform and Improve Education Policy*, ed. Kenneth Wong
 and Robert Rothman (New York: Peter Lang, 2009), 251–62,
-<http://digitalrepository.trincoll.edu/cssp_papers/4/>.
+<http://digitalrepository.trincoll.edu/cssp_papers/4/>](#ref-doughertyConflictingQuestionsWhy2009).
 
-[7] Jack Dougherty, Jesse Wanzer, and Christina Ramsay, “Sheff V.
+[7] [Jack Dougherty, Jesse Wanzer, and Christina Ramsay, “Sheff v.
 O’Neill: Weak Desegregation Remedies and Strong Disincentives in
 Connecticut, 1996-2008,” in *From the Courtroom to the Classroom: The
 Shifting Landscape of School Desegregation*, ed. Claire Smrekar and
 Ellen Goldring (Cambridge, MA: Harvard Education Press, 2009), 103–27,
-<http://digitalrepository.trincoll.edu/cssp_papers/3/>.
+<http://digitalrepository.trincoll.edu/cssp_papers/3/>](#ref-doughertySheffNeillWeak2009).
 
-[8] Jack Dougherty, “Bridging the Gap Between Urban, Suburban, and
+[8] [Jack Dougherty, “Bridging the Gap Between Urban, Suburban, and
 Educational History,” in *Rethinking the History of American Education*,
 ed. William Reese and John Rury (New York: Palgrave MacMillan Press,
-2007), 245–59, <http://digitalrepository.trincoll.edu/cssp_papers/5/>.
+2007), 245–59,
+<http://digitalrepository.trincoll.edu/cssp_papers/5/>](#ref-doughertyBridgingGapUrban2007).
 
-[9] Jack Dougherty et al., “School Choice in Suburbia: Test Scores,
+[9] [Jack Dougherty et al., “School Choice in Suburbia: Test Scores,
 Race, and Housing Markets,” *American Journal of Education* 115, no. 4
 (August 2009): 523–48,
-<http://digitalrepository.trincoll.edu/cssp_papers/1>.
+<http://digitalrepository.trincoll.edu/cssp_papers/1>](#ref-doughertySchoolChoiceSuburbia2009).
 
-[10] Amy Stuart Wells et al., “Boundary Crossing for Diversity, Equity,
+[10] [Amy Stuart Wells et al., “Boundary Crossing for Diversity, Equity,
 and Achievement: Interdistrict School Desegregation and Educational
 Opportunity” (Cambridge MA: Charles Hamilton Houston Institute for Race
 and Justice, November 2009),
-<http://charleshamiltonhouston.org/assets/documents/publications/Wells_BoundaryCrossing.pdf>.
+<http://charleshamiltonhouston.org/assets/documents/publications/Wells_BoundaryCrossing.pdf>](#ref-wellsBoundaryCrossingDiversity2009).
 
-[11] Mark Berends, Marisa Cannata, and Ellen Goldring, eds., *School
+[11] [Mark Berends, Marisa Cannata, and Ellen Goldring, eds., *School
 Choice and School Improvement* (Cambridge Mass.: Harvard Education
 Press, 2011),
-<http://www.hepg.org/hep-home/books/school-choice-and-school-improvement>.
+<http://www.hepg.org/hep-home/books/school-choice-and-school-improvement>](#ref-berendsSchoolChoiceSchool2011).
 
-[12] Pennington, Steele, and Dougherty, “A Political History of School
-Finance Reform in Metropolitan Hartford, Connecticut, 1945-2005.”
+[12] [Pennington, Steele, and Dougherty, “A Political History of School
+Finance Reform in Metropolitan Hartford, Connecticut,
+1945-2005”](#ref-penningtonPoliticalHistorySchool2007).
 
-[13] Dougherty, “Review of ’Connecticut’s Public Schools.”
+[13] [Dougherty, “Review of ’Connecticut’s Public
+Schools”](#ref-doughertyReviewConnecticutPublic2011).
 
-[14] Tegeler, *Finding Common Ground*.
+[14] [Tegeler, *Finding Common
+Ground*](#ref-tegelerFindingCommonGround2011).
 
-[15] Whitten, *West Hartford Zoning*.
+[15] [Whitten, *West Hartford
+Zoning*](#ref-whittenWestHartfordZoning1924).
 
-[16] Elizabeth Horton Sheff, “Oral History Interview on Sheff Vs.
-O’Neill” (Cities, Suburbs, Schools Project, Trinity College Digital
-Repository, July 28, 2011),
-<http://digitalrepository.trincoll.edu/cssp_ohistory/16>
+[16] [Elizabeth Horton Sheff](#ref-sheffOralHistoryInterview2011),
+[“Oral History Interview on Sheff Vs. O’Neill” (Cities, Suburbs, Schools
+Project, Trinity College Digital Repository, July 28, 2011),
+<http://digitalrepository.trincoll.edu/cssp_ohistory/16>](#ref-sheffOralHistoryInterview2011).
 
-[17] Trinity College Digital Repository Cities Suburbs and Schools
-Project Archives, accessed July 15, 2019,
-<https://digitalrepository.trincoll.edu/cssp_papers/>; On The Line
-Digital Archives, Connecticut Digital Archives, n.d.,
-<https://collections.ctdigitalarchive.org/islandora/object/120002:otl>.
+[17] [Trinity College Digital Repository Cities Suburbs and Schools
+Project
+Archives](#ref-citiessuburbsandschoolsprojectarchivestrinitycollegedigitalrepository),
+[accessed July 15, 2019,
+<https://digitalrepository.trincoll.edu/cssp_papers/>](#ref-citiessuburbsandschoolsprojectarchivestrinitycollegedigitalrepository);
+[On The Line Digital Archives, Connecticut Digital
+Archives](#ref-onthelinedigitalarchivesconnecticutdigitalarchives),
+[n.d.,
+<https://collections.ctdigitalarchive.org/islandora/object/120002:otl>](#ref-onthelinedigitalarchivesconnecticutdigitalarchives).

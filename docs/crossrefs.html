@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.1 Cross-references test | Bookdown test</title>
+  <title>Chapter 4 Cross-references test | Bookdown test</title>
   <meta name="description" content="Testing bookdown" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.1 Cross-references test | Bookdown test" />
+  <meta property="og:title" content="Chapter 4 Cross-references test | Bookdown test" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="http://jackdougherty.github.io/bookdown-test" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="jackdougherty/bookdown-test" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.1 Cross-references test | Bookdown test" />
+  <meta name="twitter:title" content="Chapter 4 Cross-references test | Bookdown test" />
   <meta name="twitter:site" content="@doughertyjack" />
   <meta name="twitter:description" content="Testing bookdown" />
   
@@ -52,7 +52,6 @@
 
 
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 
@@ -81,12 +80,10 @@
 <ul>
 <li class="chapter" data-level="" data-path="image-table.html"><a href="image-table.html"><i class="fa fa-check"></i>Image table</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="table.html"><a href="table.html"><i class="fa fa-check"></i><b>3</b> Table test</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="crossrefs.html"><a href="crossrefs.html"><i class="fa fa-check"></i><b>3.1</b> Cross-references test</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="video.html"><a href="video.html"><i class="fa fa-check"></i><b>4</b> Video Tests</a></li>
-<li class="chapter" data-level="5" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>5</b> Bibliography</a></li>
+<li class="chapter" data-level="3" data-path="table.html"><a href="table.html"><i class="fa fa-check"></i><b>3</b> Table test</a></li>
+<li class="chapter" data-level="4" data-path="crossrefs.html"><a href="crossrefs.html"><i class="fa fa-check"></i><b>4</b> Cross-references test</a></li>
+<li class="chapter" data-level="5" data-path="video.html"><a href="video.html"><i class="fa fa-check"></i><b>5</b> Video Tests</a></li>
+<li class="chapter" data-level="6" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i><b>6</b> Bibliography</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
 
@@ -107,20 +104,21 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="crossrefs" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Cross-references test</h2>
-<p>Method 1: Bookdown unique ID links to cross-ref chapters, sections, figures… do they still create extraneous and imprecise URLs?</p>
+<div id="crossrefs" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Cross-references test</h1>
+<p>Best method: cross-refs to HTML</p>
+<p>jump to the <a href="notes.html">Notes chapter</a></p>
+<p>jump to the <a href="subchapter.html">Notes subchapter</a></p>
+<p>jump to Figure <a href="image-table.html#fig:sample-static-png">2.1</a>.</p>
+<p>jump to Table <a href="table.html#tab:left-table">3.1</a>.</p>
+<p>but you cannot jump to a non-header <a href="subsection.html">Notes subchapter subsection</a></p>
+<p>Avoid using Bookdown unique ID links to cross-ref chapters and sections, because they still create imprecise URLs with extraneous hashtags</p>
 <p>let’s jump to the <a href="notes.html#notes">Notes chapter</a></p>
 <p>now let’s jump to the <a href="subchapter.html#subchapter">Notes subchapter</a></p>
 <p>now let’s jump to the <a href="subchapter.html#subsection">Notes subchapter subsection</a></p>
 <p>now let’s jump to the <a href="#sample-interactive">Sample interactive</a></p>
-<p>Method 2: the HTML method</p>
-<p>jump to the <a href="notes.html">Notes chapter</a></p>
-<p>jump to the <a href="subchapter.html">Notes subchapter</a></p>
-<p>probably won’t work but jump to the <a href="subsection.html">Notes subchapter subsection</a></p>
 
 </div>
-<!-- </div> -->
             </section>
 
           </div>

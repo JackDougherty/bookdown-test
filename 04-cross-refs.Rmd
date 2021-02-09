@@ -1,6 +1,19 @@
-## Cross-references test {#crossrefs}
+# Cross-references test {#crossrefs}
 
-Method 1: Bookdown unique ID links to cross-ref chapters, sections, figures... do they still create extraneous and imprecise URLs?
+Best method: cross-refs to HTML
+
+jump to the [Notes chapter](notes.html)
+
+jump to the [Notes subchapter](subchapter.html)
+
+jump to Figure \@ref(fig:sample-static-png).
+
+jump to Table \@ref(tab:left-table).
+
+but you cannot jump to a non-header [Notes subchapter subsection](subsection.html)
+
+
+Avoid using Bookdown unique ID links to cross-ref chapters and sections, because they still create imprecise URLs with extraneous hashtags
 
 let's jump to the [Notes chapter](#notes)
 
@@ -9,12 +22,3 @@ now let's jump to the [Notes subchapter](#subchapter)
 now let's jump to the [Notes subchapter subsection](#subsection)
 
 now let's jump to the [Sample interactive](#sample-interactive)
-
-
-Method 2: the HTML method
-
-jump to the [Notes chapter](notes.html)
-
-jump to the [Notes subchapter](subchapter.html)
-
-probably won't work but jump to the [Notes subchapter subsection](subsection.html)

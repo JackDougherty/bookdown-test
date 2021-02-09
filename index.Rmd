@@ -54,10 +54,10 @@ output:
     default
 ---
 # Preface {-}
-<!-- R global options: each R chunk image to display without code (no echo); display PDF version over JPG/PNG when available -->
+<!-- R global options: each R chunk image to display without code (no echo); align centered; display PDF version over JPG/PNG when available -->
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, fig.align = 'center')
 options(knitr.graphics.auto_pdf = TRUE)
 ```
 
-This is a test book, again... 
+This is a test book, again...
