@@ -8,12 +8,13 @@ date: "`r Sys.Date()`"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: book.bib
+bibliography: otl-book.bib
 citation-style: chicago-fullnote-bibliography.csl
 link-citations: yes
 
 url: 'http\://jackdougherty.github.io/bookdown-test'
 github-repo: jackdougherty/bookdown-test
+description: 'Testing bookdown'
 
 output:
   bookdown::gitbook:
@@ -58,29 +59,5 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 options(knitr.graphics.auto_pdf = TRUE)
 ```
+
 This is a test book
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-
-## Authors and Contributors {-}
-
-Info about each author
-
-Info about each author
-
-Info about each author
-
-Info about each author
-
-Info about each author
-
-Info about each author
-
-Info about each author
-
-and contributor
-
-## Copyright with Open License {-}
-
-All text and code for this book is available on [GitHub](https://github.com/jackdougherty/bookdown-test).  This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>

@@ -1,6 +1,8 @@
 output_dir: "docs"
+delete_merged_file: true
 book_filename: "bookdown-test"
 language:
   label:
     fig: "Image "
+    tab: "Table "
 chapter_name: "Chapter "

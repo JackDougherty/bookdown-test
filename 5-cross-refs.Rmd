@@ -1,7 +1,0 @@
-## Cross-references test {-}
-
-let's jump to the [Video chapter](#video)
-
-now let's jump to the [Notes Test Subchapter](#subchapter)
-
-now let's jump to the [Subsection](#subsection)

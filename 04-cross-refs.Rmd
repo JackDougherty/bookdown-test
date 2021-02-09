@@ -1,0 +1,20 @@
+## Cross-references test {-}
+
+Method 1: Bookdown unique ID links to cross-ref chapters, sections, figures... do they still create extraneous and imprecise URLs?
+
+let's jump to the [Notes chapter](#notes)
+
+now let's jump to the [Notes subchapter](#subchapter)
+
+now let's jump to the [Notes subchapter subsection](#subsection)
+
+now let's jump to the [Sample interactive](#sample-interactive)
+
+
+Method 2: the HTML method
+
+jump to the [Notes chapter](notes.html)
+
+jump to the [Notes subchapter](subchapter.html)
+
+probably won't work but jump to the [Notes subchapter subsection](subsection.html)
