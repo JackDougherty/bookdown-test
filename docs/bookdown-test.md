@@ -3,7 +3,7 @@ Preface
 
 <!-- R global options: each R chunk image to display without code (no echo); display PDF version over JPG/PNG when available -->
 
-This is a test book
+This is a test book, again
 
 <!--chapter:end:index.Rmd-->
 
@@ -136,13 +136,6 @@ commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 occaecat cupidatat non proident, sunt in culpa qui officia deserunt
 mollit anim id est laborum.[11]
-
-Testing hashtag cross-reference to the [media chapter](#media)
-
-Testing hashtag cross-reference to the [subchapter section](#subchapter)
-
-Testing html cross-reference to the [bibliography
-chapter](bibliography.html)
 
 <!--chapter:end:01-notes-chapter.Rmd-->
 
@@ -374,8 +367,8 @@ HTML, PDF, Word.
 
 <!--chapter:end:03-table.Rmd-->
 
-Cross-references test
----------------------
+3.1 Cross-references test
+-------------------------
 
 Method 1: Bookdown unique ID links to cross-ref chapters, sections,
 figures… do they still create extraneous and imprecise URLs?

@@ -1,4 +1,4 @@
-## Cross-references test {-}
+## Cross-references test {#crossrefs}
 
 Method 1: Bookdown unique ID links to cross-ref chapters, sections, figures... do they still create extraneous and imprecise URLs?
 
