@@ -1,6 +1,6 @@
 # Preface
 
-<!-- R global options: each R chunk image to display without code (no echo); display PDF version over JPG/PNG when available -->
+<!-- R global options: each R chunk image to display without code (no echo); align centered; display PDF version over JPG/PNG when available -->
 
 This is a test book, again…
 
@@ -490,7 +490,27 @@ See Firefox Developer note for Video HTML5 autoplay:
 
 <!--chapter:end:05-video.Rmd-->
 
-# 6 Bibliography
+# 6 Conditional formatting
+
+A sentence
+
+    ## This sentence should appear only in HTML and Word, not PDF or Markdown.
+
+<!--chapter:end:06-conditional.Rmd-->
+
+# 7 Bibliography
+
+Test plain URLs:
+
+Connecticut Digital Archive. <http://collections.ctdigitalarchive.org/>.
+
+Connecticut Historical Society. <https://chs.org/>.
+
+Test URLs in angle brackets:
+
+Connecticut Digital Archive. <http://collections.ctdigitalarchive.org/>.
+
+Connecticut Historical Society. <https://chs.org/>.
 
 <!--chapter:end:9-bibliography.Rmd-->
 

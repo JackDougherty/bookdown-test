@@ -16,4 +16,5 @@ Image
 table
 crossrefs
 video
+conditional
 bibliography

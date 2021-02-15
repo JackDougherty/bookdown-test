@@ -1,0 +1,9 @@
+# Conditional formatting {#conditional}
+
+```{r, results='asis'}
+cat("A sentence")
+```
+
+```{r, knitr::is_html_output(excludes = "markdown")}
+cat("This sentence should appear only in HTML and Word, not PDF or Markdown. But it appeared in all versions so this test failed...")
+```
