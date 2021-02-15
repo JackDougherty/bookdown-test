@@ -3,6 +3,7 @@ fig:sample-static-png
 fig:sample-static-png2
 fig:sample-static-png3
 fig:sample-interactive
+fig:sample-local-pdf
 tab:left-table
 tab:right-table
 fig:youtube-sample-video
