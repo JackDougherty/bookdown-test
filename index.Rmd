@@ -24,6 +24,7 @@ output:
     split_by: section
     number_sections: true
     split_bib: true
+    anchor_sections: true
     includes:
       after_body: footer.html
     pandoc_args: [ "--csl", "chicago-fullnote-bibliography.csl" ]
