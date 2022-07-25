@@ -27,7 +27,7 @@ that young people received in the city’s public school system far
 surpassed what was available in the outlying rural towns, known today as
 the suburbs.
 
-<iframe src="https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html" width="100%" height="600px">
+<iframe src="https://ontheline.github.io/otl-google-books-api/scribners-monthly-1876.html" width="100%" height="600px" data-external="1">
 </iframe>
 <p class="caption">
 Figure 1.1: Scroll [the full-screen
@@ -199,20 +199,38 @@ colon to left-justify, and hyphens to set relative width (2 vs. 10)
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><img src="images/preface/dougherty-jack-150.png" alt="Jack Dougherty" /></td>
-<td style="text-align: left;">Cupcake ipsum dolor sit amet danish. Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy canes wafer tart I love chocolate bar. Toffee candy canes croissant lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate bar cake oat cake lemon drops jelly-o.</td>
+<td style="text-align: left;"><img
+src="images/preface/dougherty-jack-150.png" alt="Jack Dougherty" /></td>
+<td style="text-align: left;">Cupcake ipsum dolor sit amet danish.
+Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy
+canes wafer tart I love chocolate bar. Toffee candy canes croissant
+lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly
+beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate
+bar cake oat cake lemon drops jelly-o.</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"></td>
 <td style="text-align: left;">Group 2</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><img src="images/preface/agosto-jasmin-150.png" alt="Jasmin Agosto" /></td>
-<td style="text-align: left;">Cupcake ipsum dolor sit amet danish. Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy canes wafer tart I love chocolate bar. Toffee candy canes croissant lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate bar cake oat cake lemon drops jelly-o.</td>
+<td style="text-align: left;"><img
+src="images/preface/agosto-jasmin-150.png" alt="Jasmin Agosto" /></td>
+<td style="text-align: left;">Cupcake ipsum dolor sit amet danish.
+Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy
+canes wafer tart I love chocolate bar. Toffee candy canes croissant
+lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly
+beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate
+bar cake oat cake lemon drops jelly-o.</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><img src="images/preface/ilyankou-ilya-150.png" alt="Ilya Ilyankou" /></td>
-<td style="text-align: left;">Cupcake ipsum dolor sit amet danish. Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy canes wafer tart I love chocolate bar. Toffee candy canes croissant lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate bar cake oat cake lemon drops jelly-o.</td>
+<td style="text-align: left;"><img
+src="images/preface/ilyankou-ilya-150.png" alt="Ilya Ilyankou" /></td>
+<td style="text-align: left;">Cupcake ipsum dolor sit amet danish.
+Chocolate cake muffin oat cake pie. Cookie pastry bonbon I love candy
+canes wafer tart I love chocolate bar. Toffee candy canes croissant
+lemon drops jelly-o sesame snaps. Cake gummies apple pie bonbon jelly
+beans cotton candy I love bonbon. Jujubes tart icing ice cream chocolate
+bar cake oat cake lemon drops jelly-o.</td>
 </tr>
 </tbody>
 </table>
@@ -264,6 +282,18 @@ issues, and the code](https://github.com/ontheline/otl-redlining/),
 developed by Ilya Ilyankou and Jack Dougherty.
 </p>
 
+#### Demo: R code-chunk for locally-stored scrolling PDF in HTML, static screenshot in PDF, DOCX, MD
+
+TODO: FIX this scrolling PDF issue
+
+…as shown in Figure <a href="#fig:sample-local-pdf">2.5</a>.
+
+<img src="images/sample-local-pdf-screenshot.png" alt="Here's a sample PDF that is locally stored in the GitHub repo, with option to add Markdown link."  />
+<p class="caption">
+Figure 2.5: Here’s a sample PDF that is locally stored in the GitHub
+repo, with option to add Markdown link.
+</p>
+
 <!--chapter:end:02-images.Rmd-->
 
 # 3 Table test
@@ -284,12 +314,14 @@ HTML, PDF, Word.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Left-justify text content with left-colons</td>
+<td style="text-align: left;">Left-justify text content with
+left-colons</td>
 <td style="text-align: left;">Less</td>
 <td style="text-align: left;">Here</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Use more hyphens to grant more space to some columns</td>
+<td style="text-align: left;">Use more hyphens to grant more space to
+some columns</td>
 <td style="text-align: left;">Less</td>
 <td style="text-align: left;">Here</td>
 </tr>
@@ -438,7 +470,7 @@ iframe through jQuery in the custom-script.html
 
 Here’s a solution using the [HTML5 video
 tag](https://www.w3schools.com/tags/tag_video.asp), which inserts user
-“controls” but omits “autoplay.”
+“controls” but omits “autoplay”.
 
 <video controls width="640" height="360">
 <source src="https://collections.ctdigitalarchive.org/islandora/object/120002:191/datastream/MP4" type="video/mp4">
@@ -494,23 +526,11 @@ See Firefox Developer note for Video HTML5 autoplay:
 
 A sentence
 
-    ## This sentence should appear only in HTML and Word, not PDF or Markdown.
+    ## This sentence should appear only in HTML and Word, not PDF or Markdown. But it appeared in all versions so this test failed...
 
 <!--chapter:end:06-conditional.Rmd-->
 
 # 7 Bibliography
-
-Test plain URLs:
-
-Connecticut Digital Archive. <http://collections.ctdigitalarchive.org/>.
-
-Connecticut Historical Society. <https://chs.org/>.
-
-Test URLs in angle brackets:
-
-Connecticut Digital Archive. <http://collections.ctdigitalarchive.org/>.
-
-Connecticut Historical Society. <https://chs.org/>.
 
 <!--chapter:end:9-bibliography.Rmd-->
 
@@ -584,8 +604,8 @@ Commission on the Zoning of West Hartford*. West Hartford, Conn: Zoning
 Commission, 1924.
 <http://magic.lib.uconn.edu/magic_2/raster/37840/hdimg_37840_155_1924_unkn_CSL_1_p.pdf>.
 
-[1] [Charles H. Clark](#ref-clarkCharterOakCity1876), [“The Charter Oak
-City,” *Scribner’s Monthly* 13, no. 1 (November 1876): 1–21,
+[1] Charles H. Clark, [“The Charter Oak City,” *Scribner’s Monthly* 13,
+no. 1 (November 1876): 1–21,
 <https://books.google.com/books?id=2q_PAAAAMAAJ&pg=PA1#v=onepage&q&f=false>](#ref-clarkCharterOakCity1876).
 
 [2] [Philip Tegeler, ed., *Finding Common Ground: Coordinating Housing
@@ -657,17 +677,13 @@ Ground*](#ref-tegelerFindingCommonGround2011).
 [15] [Whitten, *West Hartford
 Zoning*](#ref-whittenWestHartfordZoning1924).
 
-[16] [Elizabeth Horton Sheff](#ref-sheffOralHistoryInterview2011),
-[“Oral History Interview on Sheff Vs. O’Neill” (Cities, Suburbs, Schools
-Project, Trinity College Digital Repository, July 28, 2011),
+[16] Elizabeth Horton Sheff, [“Oral History Interview on Sheff Vs.
+O’Neill” (Cities, Suburbs, Schools Project, Trinity College Digital
+Repository, July 28, 2011),
 <http://digitalrepository.trincoll.edu/cssp_ohistory/16>](#ref-sheffOralHistoryInterview2011).
 
-[17] [Trinity College Digital Repository Cities Suburbs and Schools
-Project
-Archives](#ref-citiessuburbsandschoolsprojectarchivestrinitycollegedigitalrepository),
-[accessed July 15, 2019,
+[17] Trinity College Digital Repository Cities Suburbs and Schools
+Project Archives, [accessed July 15, 2019,
 <https://digitalrepository.trincoll.edu/cssp_papers/>](#ref-citiessuburbsandschoolsprojectarchivestrinitycollegedigitalrepository);
-[On The Line Digital Archives, Connecticut Digital
-Archives](#ref-onthelinedigitalarchivesconnecticutdigitalarchives),
-[n.d.,
+On The Line Digital Archives, Connecticut Digital Archives, [n.d.,
 <https://collections.ctdigitalarchive.org/islandora/object/120002:otl>](#ref-onthelinedigitalarchivesconnecticutdigitalarchives).
